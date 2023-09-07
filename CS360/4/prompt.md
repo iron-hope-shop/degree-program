@@ -1,0 +1,8 @@
+# Choose two apps that you use yourself or that you have found via research, and evaluate their UI design elements. 
+# Compare the following design elements and determine what works, what could be improved on, and which of the two apps is ultimately more successful in each area.
+I have chosen the iOS apps for Target and Walmart.  Both apps have search functionality at the top of the main screen.  This is convenient when adding items to your cart, type in "Oreos" and it will take you right to the item.  Target's search bar takes two clicks to become active and accept user input while Walmart's search bar only requires one click.  Both apps have a drawer on the bottom which switches between screens.  Target uses different phrasing like "Discover" and "My Target" where Walmart uses "Shop" and "Account" respectively.  Both apps use similar typography but Target seems to favor bold typeface more than Walmart.  Target has light and dark themes as well as selectable themes for the app icon itself!  Walmart does not seem to allow users to select a theme.  The layout of the applications is similar on the homepage ("Shop" for Walmart and "Discover" for Target).  They have news, deals, and suggestions for users.  Walmart seems to suggest a lot more items and fit more items on each page.  In my opinion, Target has the more minimal and visually appealing app.  Overall, being the fortune 1 company, I would say Walmart is more successful; however, they have recieved a lot of flak for their recent release of this app as there are many bugs in the backend.
+
+Themes
+Color
+Typography
+Layout

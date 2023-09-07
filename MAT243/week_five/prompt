@@ -1,0 +1,19 @@
+You created a scatterplot of miles per gallon against weight; check to make sure it was included in your attachment. Does the graph show any trend? If yes, is the trend what you expected? Why or why not? See Step 2 in the Python script.
+
+My scatterplot of miles per gallon against weight shows an inverse relationship between MPG and weight.  This makes sense and is what I expected.  The more massive the car, the more fuel it will consume to go the same distance as a lighter one.
+
+What is the coefficient of correlation between miles per gallon and weight? What is the sign of the correlation coefficient? Does the coefficient of correlation indicate a strong correlation, weak correlation, or no correlation between the two variables? How do you know? See Step 3 in the Python script.
+
+The coefficient of correlation between miles per gallon and weight is -0.87.  Due to the coefficient of correlation being less than zero, the correlation between miles per gallon and weight is negative.  This indicates a strong correlation between the two variables because 0.80 < |-0.87| < 1.00.
+
+Write the simple linear regression equation for miles per gallon as the response variable and weight as the predictor variable. How might the car rental company use this model? See Step 4 in the Python script.
+
+Below is the linear regression equation for per gallon as the response variable and weight as the predictor variable.
+y = 37.3421 - 5.3694x
+
+The car rental company could charge customers a higher price for higher weight vehicles (which are usually more spacious).
+
+
+What is the slope coefficient? Is this coefficient significant at a 5% level of significance (alpha=0.05)? (Hint: Check the P-value, P is greater than the absolute value of t, for weight in the Python output.) See Step 4 in the Python script.
+
+The slope coefficient is -5.369.  P>|t| is 0.  This indicates that there is a statistically significant relationship between the term and the response because it is less than the confidence level.

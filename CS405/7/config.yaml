@@ -1,0 +1,295 @@
+config: conf/tuning/train_asr_hubert_conformer.yaml
+print_config: false
+log_level: INFO
+dry_run: false
+iterator_type: sequence
+output_dir: exp/asr_train_asr_hubert_conformer_raw_bpe100_init_paramexpexp_hubert_large_ll60k_weighted_perturbasr_train_asr_conformer7_hubert_960hr_large_raw_en_bpe5000_sp26epoch.pth:::decoder.output_layer,decoder.embed.0,ctc.ctc_lo_sp
+ngpu: 1
+seed: 0
+num_workers: 1
+num_att_plot: 3
+dist_backend: nccl
+dist_init_method: env://
+dist_world_size: null
+dist_rank: null
+local_rank: null
+dist_master_addr: null
+dist_master_port: null
+dist_launcher: null
+multiprocessing_distributed: false
+unused_parameters: false
+sharded_ddp: false
+cudnn_enabled: true
+cudnn_benchmark: false
+cudnn_deterministic: true
+collect_stats: false
+write_collected_feats: false
+max_epoch: 500
+patience: null
+val_scheduler_criterion:
+- valid
+- loss
+early_stopping_criterion:
+- valid
+- loss
+- min
+best_model_criterion:
+-   - valid
+    - acc
+    - max
+keep_nbest_models: 10
+grad_clip: 5.0
+grad_clip_type: 2.0
+grad_noise: false
+accum_grad: 1
+no_forward_run: false
+resume: true
+train_dtype: float32
+use_amp: false
+log_interval: null
+use_tensorboard: true
+use_wandb: false
+wandb_project: null
+wandb_id: null
+wandb_entity: null
+wandb_name: null
+wandb_model_log_interval: -1
+detect_anomaly: false
+pretrain_path: null
+init_param:
+- exp/exp_hubert_large_ll60k_weighted_perturb/asr_train_asr_conformer7_hubert_960hr_large_raw_en_bpe5000_sp/26epoch.pth:::decoder.output_layer,decoder.embed.0,ctc.ctc_lo
+ignore_init_mismatch: false
+freeze_param:
+- frontend.upstream
+num_iters_per_epoch: null
+batch_size: 20
+valid_batch_size: null
+batch_bins: 1000000
+valid_batch_bins: null
+train_shape_file:
+- exp/asr_stats_raw_bpe100_sp/train/speech_shape
+- exp/asr_stats_raw_bpe100_sp/train/text_shape.bpe
+valid_shape_file:
+- exp/asr_stats_raw_bpe100_sp/valid/speech_shape
+- exp/asr_stats_raw_bpe100_sp/valid/text_shape.bpe
+batch_type: folded
+valid_batch_type: null
+fold_length:
+- 80000
+- 150
+sort_in_batch: descending
+sort_batch: descending
+multiple_iterator: false
+chunk_length: 500
+chunk_shift_ratio: 0.5
+num_cache_chunks: 1024
+train_data_path_and_name_and_type:
+-   - dump/raw/train_sp/wav.scp
+    - speech
+    - sound
+-   - dump/raw/train_sp/text
+    - text
+    - text
+valid_data_path_and_name_and_type:
+-   - dump/raw/dev/wav.scp
+    - speech
+    - sound
+-   - dump/raw/dev/text
+    - text
+    - text
+allow_variable_data_keys: false
+max_cache_size: 0.0
+max_cache_fd: 32
+valid_max_cache_size: null
+optim: adam
+optim_conf:
+    lr: 0.0002
+scheduler: warmuplr
+scheduler_conf:
+    warmup_steps: 2000
+token_list:
+- <blank>
+- <unk>
+- DECREASEBRIGHTNESS
+- INCREASEBRIGHTNESS
+- SETLIGHTBRIGHTNESS
+- SETLIGHTCOLOR
+- SWITCHLIGHTOFF
+- SWITCHLIGHTON
+- ▁
+- ▁the
+- ▁lights
+- ▁to
+- e
+- ▁in
+- ▁turn
+- i
+- s
+- l
+- d
+- t
+- ▁please
+- o
+- ▁room
+- ▁light
+- ke
+- ▁brightness
+- ▁i
+- ▁off
+- a
+- ▁be
+- ▁on
+- m
+- ▁ma
+- nt
+- ▁wa
+- r
+- ▁change
+- u
+- ▁set
+- re
+- ▁you
+- y
+- ▁can
+- ▁li
+- g
+- ing
+- ▁down
+- ▁pink
+- p
+- ▁two
+- v
+- ▁lighting
+- ▁of
+- w
+- ▁red
+- at
+- ting
+- ▁bedroom
+- ▁s
+- ▁la
+- ▁need
+- ▁twenty
+- ▁up
+- ▁it
+- eve
+- ▁me
+- f
+- ou
+- ▁green
+- ld
+- ▁increase
+- ▁brighter
+- ▁blue
+- ▁color
+- ▁bright
+- ▁toilet
+- ▁kitchen
+- ▁dim
+- ry
+- ▁lower
+- ▁bathroom
+- ▁switch
+- all
+- ▁twelve
+- ▁dark
+- ▁basement
+- ▁percent
+- x
+- j
+- k
+- c
+- b
+- n
+- '0'
+- '3'
+- q
+- z
+- '4'
+- h
+- <sos/eos>
+init: null
+input_size: null
+ctc_conf:
+    dropout_rate: 0.0
+    ctc_type: builtin
+    reduce: true
+    ignore_nan_grad: true
+model_conf:
+    ctc_weight: 0.3
+    lsm_weight: 0.1
+    length_normalized_loss: false
+    extract_feats_in_collect_stats: false
+use_preprocessor: true
+token_type: bpe
+bpemodel: data/token_list/bpe_unigram100/bpe.model
+non_linguistic_symbols: null
+cleaner: null
+g2p: null
+speech_volume_normalize: null
+rir_scp: null
+rir_apply_prob: 1.0
+noise_scp: null
+noise_apply_prob: 1.0
+noise_db_range: '13_15'
+frontend: s3prl
+frontend_conf:
+    frontend_conf:
+        upstream: hubert_large_ll60k
+    download_dir: ./hub
+    multilayer_feature: true
+    fs: 16k
+specaug: specaug
+specaug_conf:
+    apply_time_warp: true
+    time_warp_window: 5
+    time_warp_mode: bicubic
+    apply_freq_mask: true
+    freq_mask_width_range:
+    - 0
+    - 30
+    num_freq_mask: 2
+    apply_time_mask: true
+    time_mask_width_range:
+    - 0
+    - 40
+    num_time_mask: 2
+normalize: utterance_mvn
+normalize_conf: {}
+preencoder: linear
+preencoder_conf:
+    input_size: 1024
+    output_size: 80
+encoder: conformer
+encoder_conf:
+    output_size: 512
+    attention_heads: 8
+    linear_units: 2048
+    num_blocks: 12
+    dropout_rate: 0.1
+    positional_dropout_rate: 0.1
+    attention_dropout_rate: 0.1
+    input_layer: conv2d
+    normalize_before: true
+    macaron_style: true
+    pos_enc_layer_type: rel_pos
+    selfattention_layer_type: rel_selfattn
+    activation_type: swish
+    use_cnn_module: true
+    cnn_module_kernel: 31
+postencoder: null
+postencoder_conf: {}
+decoder: transformer
+decoder_conf:
+    attention_heads: 8
+    linear_units: 2048
+    num_blocks: 6
+    dropout_rate: 0.1
+    positional_dropout_rate: 0.1
+    self_attention_dropout_rate: 0.1
+    src_attention_dropout_rate: 0.1
+required:
+- output_dir
+- token_list
+version: 0.10.3a3
+distributed: false

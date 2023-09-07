@@ -1,0 +1,254 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            01/22/2020
+            <!-- UPDATE -->
+        </span>
+        <br>
+        MAT 243
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week Three
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        Confidence Intervals and Hypothesis Testing
+        <!-- UPDATE -->
+    </h1>
+</head>
+<body style="text-align:justify;">
+    <h4>Step 1 Input:</h4>
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">pandas</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">pd</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">numpy</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">np</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">math</span>
+<span style="color: #f92672">import</span> <span style="color: #f8f8f2">scipy.stats</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">st</span>
+
+<span style="color: #75715e"># create 50 randomly chosen values from a Normal distribution. (arbitrarily using mean=2.48 and standard deviation=0.50). </span>
+<span style="color: #f8f8f2">diameters</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">np</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">random</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">normal(</span><span style="color: #ae81ff">2.4800</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">0.500</span><span style="color: #f8f8f2">,</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #75715e"># convert the array into a dataframe with the column name &quot;diameters&quot; using pandas library.</span>
+<span style="color: #f8f8f2">diameters_df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pd</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">DataFrame(diameters,</span> <span style="color: #f8f8f2">columns</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">[</span><span style="color: #e6db74">&#39;diameters&#39;</span><span style="color: #f8f8f2">])</span>
+<span style="color: #f8f8f2">diameters_df</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">diameters_df</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">round(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #75715e"># print the dataframe (note that the index of dataframe starts at 0).</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Diameters data frame</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">print(diameters_df)</span>
+</pre></td></tr></table></div>
+
+    <br>
+    <h4>Step 1 Output:</h4>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Diameters data frame
+
+    diameters
+0        2.54
+1        2.40
+2        2.67
+...
+47       3.50
+48       2.73
+49       2.09
+</pre></div>
+
+    <p style="text-indent:48px;line-height:2">
+        The statistics above show that we can say with a 90% probability that the diameter of ball bearings produced by this process will be between 2.39 and 2.62; futhermore, we can broaded our statement to include 99% of the bearings whose diameters will probabilistically fall between 2.33 and 2.69.
+        <!-- UPDATE -->
+    </p>
+    
+    <h4>Step 2 Input:</h4>
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e"># Python methods that calculate confidence intervals require the sample mean and the standard error as inputs.</span>
+
+<span style="color: #75715e"># calculate the sample mean</span>
+<span style="color: #f8f8f2">mean</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">diameters_df[</span><span style="color: #e6db74">&#39;diameters&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">mean()</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Mean =&quot;</span><span style="color: #f8f8f2">,round(mean,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Standard deviation =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(diameters_df[</span><span style="color: #e6db74">&#39;diameters&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">std(),</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+
+<span style="color: #75715e"># input the population standard deviation, which was given in Step 1.</span>
+<span style="color: #f8f8f2">std_deviation</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0.5000</span>
+
+<span style="color: #75715e"># calculate standard error = standard deviation / sqrt(n)   where n is the sample size.</span>
+<span style="color: #f8f8f2">stderr</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">std_deviation</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">math</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">sqrt(len(diameters_df[</span><span style="color: #e6db74">&#39;diameters&#39;</span><span style="color: #f8f8f2">]))</span>
+
+<span style="color: #75715e"># construct a 90% confidence interval.</span>
+<span style="color: #f8f8f2">conf_int_90</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">st</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">norm</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">interval(</span><span style="color: #ae81ff">0.90</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">mean,</span> <span style="color: #f8f8f2">stderr)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">90% confidence interval (unrounded) =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">conf_int_90)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;90% confidence interval (rounded) = (&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(conf_int_90[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">),</span> <span style="color: #e6db74">&quot;,&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(conf_int_90[</span><span style="color: #ae81ff">1</span><span style="color: #f8f8f2">],</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">),</span> <span style="color: #e6db74">&quot;)&quot;</span><span style="color: #f8f8f2">)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #75715e"># construct a 99% confidence interval.</span>
+<span style="color: #f8f8f2">conf_int_99</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">st</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">norm</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">interval(</span><span style="color: #ae81ff">0.99</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">mean,</span> <span style="color: #f8f8f2">stderr)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;99% confidence interval (unrounded) =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">conf_int_99)</span>
+<span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;99% confidence interval (rounded) = (&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(conf_int_99[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">],</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">),</span> <span style="color: #e6db74">&quot;,&quot;</span>
+</pre></td></tr></table></div>
+
+    <br>
+    <h4>Step 2 Output:</h4>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Mean = 2.51
+Standard deviation = 0.55
+
+90% confidence interval (unrounded) = (2.397291284632333, 2.6299087153676677)
+90% confidence interval (rounded) = ( 2.4 , 2.63 )
+
+99% confidence interval (unrounded) = (2.331461363228155, 2.6957386367718454)
+99% confidence interval (rounded) = ( 2.33 , 2.7 )
+</pre></div>
+
+    <p style="text-indent:48px;line-height:2">
+        According to the calculation above, the average diameter of ball bearings from this manufacturing process is 2.51, which suggests that there is flaw in the previous studies or that quality control has declined.
+        <!-- UPDATE -->
+    </p>
+    
+    <h4>Step 3 Input:</h4>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">1
+    2
+    3
+    4
+    5
+    6
+    7
+    8</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">from</span> <span style="color: #f8f8f2">statsmodels.stats.weightstats</span> <span style="color: #66d9ef">import</span> <span style="color: #f8f8f2">ztest</span>
+    
+    <span style="color: #75715e"># run z-test hypothesis test for population mean. The value under the null hypothesis is 2.30.</span>
+    <span style="color: #f8f8f2">test_statistic,</span> <span style="color: #f8f8f2">p_value</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">ztest(x1</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">diameters_df[</span><span style="color: #e6db74">&#39;diameters&#39;</span><span style="color: #f8f8f2">],</span>  <span style="color: #f8f8f2">value</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2.30</span><span style="color: #f8f8f2">)</span>
+    
+    <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;z-test hypothesis test for population mean&quot;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;test-statistic =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(test_statistic,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+    <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;two tailed p-value =&quot;</span><span style="color: #f8f8f2">,round(p_value,</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">))</span>
+    </pre></td></tr></table></div>
+    
+    <br>
+    <h4>Step 3 Output:</h4>
+    <!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">z-test hypothesis test for population mean
+test-statistic = 2.76
+two tailed p-value = 0.0059
+</pre></div>
+<p style="text-indent:48px;line-height:2">
+    The null hypothesis is that the average diameter of the ball bearings from this sample is 2.30, represented by:
+    <!-- UPDATE -->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>=</mo>
+      <msub>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mn>0</mn>
+      </msub>
+      
+  <mspace linebreak="newline" />
+      <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>=</mo>
+        <mn>2.30</mn>
+    </math>
+<p style="text-indent:48px;line-height:2">
+    The alternative hypothesis is that, based on the mean of the population, the average diameter of the ball bearings from this sample is not equal to 2.30 (in a two-tailed scenario).  This is represented by:
+    <!-- UPDATE -->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>&#x2260;</mo>
+      <msub>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mn>0</mn>
+      </msub>
+      
+  <mspace linebreak="newline" />
+      <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>&#x2260;</mo>
+        <mn>2.30</mn>
+    </math>
+<p style="text-indent:48px;line-height:2">
+    Our ztest class method is using the following equation to determine the p-value:
+    <!-- UPDATE -->
+</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <mi>z</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mover>
+            <mi>x</mi>
+            <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+          </mover>
+        </mrow>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>&#x03BC;<!-- μ --></mi>
+          <mn>0</mn>
+        </msub>
+      </mrow>
+      <mfrac>
+        <mi>&#x03C3;<!-- σ --></mi>
+        <msqrt>
+          <mi>n</mi>
+        </msqrt>
+      </mfrac>
+    </mfrac>
+  </math>
+<p style="text-indent:48px;line-height:2">
+    As stated above, he level of significance is 0.0100 and the p-value is 0.0059.  The p-value is less than the level of significance, thus the is significantly different from 2.30.  It is for this reason that we can reject the null hypothesis and adopt the alternative hypothesis that the mean of this sample is not equal (or even close) to 2.30.
+    <!-- UPDATE -->
+</p>
+</body>

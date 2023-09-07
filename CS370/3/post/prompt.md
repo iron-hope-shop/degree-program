@@ -1,0 +1,18 @@
+Hidden biases in AI systems have been increasingly recognized as a significant issue, particularly as these systems are used in more and more decision-making processes that affect people's lives. One notable example of this is Amazon's AI recruitment tool, which was found to be biased against women. The system was trained on resumes submitted to the company over a 10-year period, most of which came from men, leading the AI to favor male candidates (Dastin, 2018). Another example is the racial bias found in facial recognition technologies. Studies have shown that these systems, such as IBM's, Microsoft's, and Amazon's, have higher error rates in identifying the gender of darker-skinned and female faces compared to lighter-skinned and male faces (Buolamwini & Gebru, 2018).
+
+Efforts to reduce bias in AI systems have been initiated by various industry groups and researchers. One such effort is the concept of Responsible Research and Innovation (RRI), which encourages the inclusion of all stakeholders in the development process to ensure that the technology is inclusive and meets societal needs (Stahl, 2013). Another approach is "Ethics by Design", which involves integrating ethical considerations into the design process of AI systems from the outset (Floridi & Taddeo, 2016). The "Right to be Forgotten" is a legal concept that has been applied in the European Union, allowing individuals to request the deletion of personal data related to them (Ausloos, 2012).
+
+Applying these principles to the examples mentioned, in the case of Amazon's recruitment tool, an RRI approach could involve ensuring a diverse set of resumes for training the AI, not just those that have been historically submitted. For facial recognition technologies, an "Ethics by Design" approach could involve testing the system on a diverse set of faces from the beginning, ensuring that the system works equally well for all demographic groups. The "Right to be Forgotten" could be applied to allow individuals to request that their data not be used in training these AI systems, providing a measure of control over how their data is used. These efforts align with current industry initiatives to make AI systems more fair and accountable.
+
+
+
+
+Ausloos, J. (2012). The ‘right to be forgotten’ – worth remembering? <i>Computer Law & Security Review, 28</i>(2), 143–152. <a href="https://doi.org/10.1016/j.clsr.2012.01.006">https://doi.org/10.1016/j.clsr.2012.01.006</a>
+
+Buolamwini, J. & Gebru, T.. (2018). Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification. <i>Proceedings of Machine Learning Research, 81</i>, 77-91. <a href="https://proceedings.mlr.press/v81/buolamwini18a.html">https://proceedings.mlr.press/v81/buolamwini18a.html</a>
+
+Dastin, J. (2018, October 10). <i>Amazon scraps secret AI recruiting tool that showed bias against women</i>. Reuters. <a href="https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G">https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G</a>
+
+Floridi, L., & Taddeo, M. (2016). What is data ethics? <i>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences, 374</i>(2083), 20160360. <a href="https://doi.org/10.1098/rsta.2016.0360">https://doi.org/10.1098/rsta.2016.0360</a> 
+
+Stahl, B. C. (2013). Responsible research and innovation: The role of privacy in an emerging framework. <i>Science and Public Policy, 40</i>(6), 708–716. <a htef="https://doi.org/10.1093/scipol/sct067">https://doi.org/10.1093/scipol/sct067</a>

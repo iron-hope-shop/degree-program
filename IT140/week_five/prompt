@@ -1,0 +1,7 @@
+Make sure to include the following reflection:
+
+Applying Your Experience
+
+A. Reflecting on your experience with this activity, explain the importance of knowing how and when to use and modify variables, and using branches. Support your response with examples from the activity of the types of errors and your method for fixing them.
+
+It was important to know when to use branches in these scripts because we had a predefined set of inputs.  In these small instances of monomorphism it was hard to actually get any errors.  I leaned on experience and it seemed like my errors were all in the syntax of my output.  Codio demanded perfection.  To account for user error, I implemented error-handling pretty early on in my draft.  One error that always seems to surface is the TokenError or SyntaxError caused by missing a parenthesis somewhere.

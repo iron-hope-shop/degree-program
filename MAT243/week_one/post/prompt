@@ -1,0 +1,44 @@
+You must attach your Python script output as an HTML file and respond to the questions below.
+
+For this discussion, you will collect data from a public source and calculate descriptive statistics, including measures of central tendency and variability. You will then interpret the results and provide feedback to your peers.
+
+In your initial post, use the World Temperatures website (or a similar website of your choice) to find the daily maximum temperature data in your city or zip code for the past fourteen days. You will use this data set to calculate measures of central tendency and variability. You will also provide a detailed analysis based on your results.
+
+In your initial post, address the following items:
+
+Share your data set. 
+See Step 1 in the Python script.
+What were your descriptive statistics for this data set? Report the mean, median, variance, and standard deviation. Based on these statistics, what can you say about the distribution of daily maximum temperature in your city or zip code? Use all of the statistics that you calculated to explain the distribution in detail. 
+
+See Step 2 in the Python script.
+Which graph showed the general trend of daily maximum temperature in your city or zip code? 
+
+See Step 3 in the Python script.
+In general, how are the measures of central tendency and variability used to analyze a data distribution?
+The Python script also provides you with temperature data for a city called Zion. Which graph showed the difference in the distribution of your data and Zion’s data? What can you say about the differences in data distributions? See Step 4 in the Python script.
+
+Based on the statistics, we can see that there are 14 samples of this data.  The data contains daily temperatures for the past 14 days, per the prompt within the notebook.  The average, or mean, high temperatures over the past two weeks is about 54°F.  The variance of the temperatures is shown by the high standard deviation (6.7).  The min and max provide more details too, showing that the minimum temperature high was 43°F and the max was 66°F.  The quartiles show how much of the data is encompassed given a maximum value.  We can see that the majority of the temperatures fall under 57°F.  I live in Bentonville, Arkansas.  The significance of this data to me is prove that I can survive this relative tundra, having spent most of my life in south Texas.
+
+This graph visually demonstrates the temperature trend over the past 14 days.  As you can see, days 4 to 9 were-- on average-- the coldest.
+
+The measures of central tendency and variability are used to analyze a data distribution by giving us a standard for our data.  By determining a baseline measurement for the temperature highs, we can observe and potentially predict general trends in temperature.
+
+The graph above shows my data as well as the randomly-generated Zion data.  By comparing the box plots it is clear that from whisker to whisker the relative tendencies are the same; however, there are two outliers on the box plot for Zion's data.
+
+
+
+In your follow-up posts to other students, review your peers’ data sets and statistics and discuss the significance of these results. Here are some questions that you should address in your follow-up posts:
+
+How do your peers’ measures of central tendency compare to yours? Are they are lower or higher? What does this signify?
+How do the measures of variability compare? What does this signify?
+In what ways are their data similar to or different from your own? Why are those similarities or distinctions meaningful?
+
+Compared to my statistics, your temperature has a larger variance and standard devation.  Overall your temperatures are lower, shown by your lower mean and median.  Based on the data the temperature was less than 44°F 75% of the time.  Let us not forget that these are the daily HIGHS.  This data is meaningful to me in determining I do not what to relocate to that area.  In short: I could not live where you do, it is simply too cold.  I would surely die in that environment.
+
+
+Compared to my data's central tendency, your data shows lower figures.  The mean and median are about 10°F lower than on my statistics.  From this I can derive you live further north than I do, but not in a tundra.
+
+In terms of variability, your data has a much lower variance.  The deviation is only slightly lower, though.  This indicates that the temperature in your area was relatively stable with only a couple of freezing or near-freezing days.
+
+This type of weather may not seem stable but I can confirm that, compared to my data, your weather is fairly consistant.  In my area there is usually no slow shift in the weather pattern.  The temperature is cold during the winter and then one day it will shift from mid 40s to 70s overnight and it will magically be summer (having skipped spring weather).  At least that's how it seems these days.  I am guessing, based on your data, that there will be a transition period between Winter and Spring.
+

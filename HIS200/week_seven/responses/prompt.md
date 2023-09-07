@@ -1,0 +1,7 @@
+# In response to your peers, share any preconceived notions you may have about their topic. Lastly, consider how further exploration of the viewpoints around their topic would potentially change the lens through which they currently view the event.
+
+ Unfortunately the prompt did not have us explicitly post our topics so I am assuming that your topic is the Women's Rights movement or something similar.  My preconceived notions around your topic are based on social and scientific aspects.  Women are physically different from men and inherently weaker so since the beginning of time it has been more of a social fight to get the rights they deserve.  I think that it is a sad fact that it took so long after the United States because "civilized" for women to gain ground in this arena.  I would look at the natural or phychological causes of the role of women played in society before laws were created to balance the sexes.
+
+ In my research of the "Trail of Tears," I have learned that the historical complexity is that the state and federal governments went far and beyond to gain control of the Natives' land.
+
+ I always assumed that white settlers were the only ones at fault since this conflict would have been delayed had the Americas not been discovered.  I guess the fact that it did happen incited guerrilla tactics between the two warring parties.  I would also be interested to see how desertion played a role during this time in history.

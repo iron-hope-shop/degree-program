@@ -1,0 +1,5 @@
+I have chosen a paper written about Google's use of eigenvectors.  The author describes Google's pioneering application of eigenvectors to the early stages of the internet.  The "importance rank" of a Google search is the result of a ranking algorithm based on eigenvectors.
+
+This paper demonstrated to me that the application of relateively basic linear alegebra to a large-scale problem changed the entire landscape of the internet.  I wonder what the possibilities of applying concepts of this class to my work could have for me?  A lot has changed since the early 90s; however, I believe with every new layer of abstraction time brings, there will be an opportunity for an elegant solution.  I could potentially apply eigenvectors to several work-related issues I have encountered.  For instance, ranking the probability that a user is X.
+
+Learning more about eigenvectors, as well as the other concepts discussed during this class, will help me further my career by giving me the tools to solve relevant problems in an elegant way.  I will definately keep an eye out for opportunities to use what (little) I know about linear algebra!

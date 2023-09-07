@@ -1,0 +1,7 @@
+. Reflection - Applying Your Experience
+Making mistakes when you learn to write code is common. It is part of learning. What is important is developing the skill of learning how to understand
+your errors and then fix them (debugging). For this part of your final project, you will respond to the following:
+A. Reflecting on your experience with this activity, explain the importance of knowing how and when to use lists, dictionaries, and loop
+types. Support your response with examples from the activity of the types of errors and your method for fixing them.
+
+Based on my experience from this activity, lists, dictionaries, and loops are useful in specific situations.  Dictionaries were useful in this activity for storing item details.  The key-value pairs in dictionaries are perfect for storing this type of information.  Lists were useful during this exercise when storing unique items.  The dictionary of item details was added to the grocery list.  I used loops to iterate through the grocery list, to print, and add item values.  Knowing when to use these contructs helps to keep the code concise, readable, and effective.

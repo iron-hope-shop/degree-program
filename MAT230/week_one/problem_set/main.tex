@@ -1,0 +1,372 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+%\documentclass{amsart}
+%\usepackage{txfonts}
+%\documentclass[12pt,oneside]{article}
+\documentclass{amsart}
+\usepackage{graphicx}
+\usepackage{enumitem}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{Exercise}
+\newtheorem{ex}[thm]{Exercise}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\theoremstyle{rule}
+\newtheorem{rul}[thm]{Rule}
+
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\bB(X)}
+\newcommand{\A}{\mathcal{A}}
+% ----------------------------------------------------------------
+
+% define some simple, commonly-used commands
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\dint}{\displaystyle\int}
+
+\newcommand{\pdr}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\pdrr}[2]{\dfrac{\partial^2{#1}}{\partial{#2}^2}}
+\newcommand{\pdrt}[3]{\dfrac{\partial^2{#1}}{\partial{#2}{\partial{#3}}}}
+\newcommand{\dr}[2]{\dfrac{d{#1}}{d{#2}}}
+\newcommand{\aver}[1]{\langle {#1} \rangle}
+\newcommand{\Baver}[1]{\Big\langle {#1} \Big\rangle}
+
+\newcommand{\bzero}{\mathbf 0}
+\newcommand{\bGamma}{\mbox{\boldmath{$\Gamma$}}}
+\newcommand{\btheta}{\boldsymbol \theta}
+\newcommand{\bchi}{\mbox{\boldmath{$\chi$}}}
+\newcommand{\bnu}{\boldsymbol \nu}
+\newcommand{\bmu}{\boldsymbol \mu}
+\newcommand{\brho}{\mbox{\boldmath{$\rho$}}}
+\newcommand{\bxi}{\boldsymbol \xi}
+\newcommand{\bnabla}{\boldsymbol \nabla}
+\newcommand{\bOm}{\boldsymbol \Omega}
+\newcommand{\blambda}{\boldsymbol \lambda}
+\newcommand{\bsigma}{\boldsymbol \sigma}
+
+\newcommand{\bbR}{\mathbb R}
+\newcommand{\bbC}{\mathbb C}
+\newcommand{\bbQ}{\mathbb Q}
+\newcommand{\bbN}{\mathbb N}
+\newcommand{\bbZ}{\mathbb Z}
+
+\newcommand{\ba}{\mathbf a} \newcommand{\bb}{\mathbf b}
+\newcommand{\bc}{\mathbf c} \newcommand{\bd}{\mathbf d}
+\newcommand{\be}{\mathbf e} \newcommand{\bff}{\mathbf f}
+\newcommand{\bg}{\mathbf g} \newcommand{\bh}{\mathbf h}
+\newcommand{\bi}{\mathbf i} \newcommand{\bj}{\mathbf j}
+\newcommand{\bk}{\mathbf k} \newcommand{\bl}{\mathbf l}
+\newcommand{\bm}{\mathbf m} \newcommand{\bn}{\mathbf n}
+\newcommand{\bo}{\mathbf o} \newcommand{\bp}{\mathbf p}
+\newcommand{\bq}{\mathbf q} \newcommand{\br}{\mathbf r}
+\newcommand{\bs}{\mathbf s} \newcommand{\bt}{\mathbf t}
+\newcommand{\bu}{\mathbf u} \newcommand{\bv}{\mathbf v}
+\newcommand{\bw}{\mathbf w} \newcommand{\bx}{\mathbf x}
+\newcommand{\by}{\mathbf y} \newcommand{\bz}{\mathbf z}
+\newcommand{\bA}{\mathbf A} \newcommand{\bB}{\mathbf B}
+\newcommand{\bC}{\mathbf C} \newcommand{\bD}{\mathbf D}
+\newcommand{\bE}{\mathbf E} \newcommand{\bF}{\mathbf F}
+\newcommand{\bG}{\mathbf G} \newcommand{\bH}{\mathbf H}
+\newcommand{\bI}{\mathbf I} \newcommand{\bJ}{\mathbf J}
+\newcommand{\bK}{\mathbf K} \newcommand{\bL}{\mathbf L}
+\newcommand{\bM}{\mathbf M} \newcommand{\bN}{\mathbf N}
+\newcommand{\bO}{\mathbf O} \newcommand{\bP}{\mathbf P}
+\newcommand{\bQ}{\mathbf Q} \newcommand{\bR}{\mathbf R}
+\newcommand{\bS}{\mathbf S} \newcommand{\bT}{\mathbf T}
+\newcommand{\bU}{\mathbf U} \newcommand{\bV}{\mathbf V}
+\newcommand{\bW}{\mathbf W} \newcommand{\bX}{\mathbf X}
+\newcommand{\bY}{\mathbf Y} \newcommand{\bZ}{\mathbf Z}
+
+\newcommand{\cA}{\mathcal A} \newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C} \newcommand{\cD}{\mathcal D}
+\newcommand{\cE}{\mathcal E} \newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G} \newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I} \newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K} \newcommand{\cL}{\mathcal L}
+\newcommand{\cM}{\mathcal M} \newcommand{\cN}{\mathcal N}
+\newcommand{\cO}{\mathcal O} \newcommand{\cP}{\mathcal P}
+\newcommand{\cQ}{\mathcal Q} \newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S} \newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U} \newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W} \newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y} \newcommand{\cZ}{\mathcal Z}
+
+
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\chead{\includegraphics[scale=.1]{snhu_logo.png}}
+\begin{document}
+
+\title{\sf Module One Problem Set}%
+
+
+
+%\thm{bbjh}
+
+
+\begin{center}
+\includegraphics[scale=.1]{snhu_logo.png}
+\end{center}
+
+\maketitle 
+This document is proprietary to Southern New Hampshire University. It and the problems within may not be posted on any non-SNHU website.
+\\\\\\\\
+\begin{center}
+%Enter your name below this line:
+Brad Jackson
+\end{center}
+
+\begin{center}
+\rule{\textwidth}{0.4pt}
+\end{center}
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+
+\section*{}
+
+
+\section*{}
+Directions: Type your solutions into this document and be sure to show all steps for arriving at your solution. Just giving a final number may not receive full credit.
+\\
+
+\section*{Problem 1}
+
+In the following question, the domain of {\bf discourse} is a set of male patients in a clinical study. Define the following predicates:\\
+\begin{itemize}
+  \item $P(x):\; x$ was given the placebo\\\\
+  \item $D(x):\; x$ was given the medication\\\\
+  \item $M(x): \; x$ had migraines\\\\
+\end{itemize}
+Translate each of the following statements into a logical expression. Then negate the expression by adding a negation operation to the beginning of the expression. Apply De Morgan's law until each negation operation applies directly to a predicate and then translate the logical expression back into English.\\\\
+
+{\it
+Sample question: Some patient was given the placebo and the medication.\\
+\begin{itemize}
+  \item $\exists x\; (P(x)\; \land \; D(x))$\\
+  \item Negation: $\neg \exists x\; (P(x)\; \land \; D(x))$\\
+  \item Applying De Morgan's law: $\forall x\; (\neg P(x)\; \lor \; \neg D(x))$\\
+  \item English: Every patient was either not given the placebo or not given the medication (or both).\\
+\end{itemize}
+}
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+\begin{enumerate}[label=(\alph*)]
+
+\item Every patient was given the medication or the placebo or both.\\\\
+%Enter your answer below this comment line.
+$\forall x\; (D(x)\; \lor\; P(x))$\\
+% ∀x (D(x) ∨ P(x))
+
+Negation:\\
+$\neg \forall x\; (D(x)\; \lor\; P(x))$\\
+% Negation: ¬∀x (D(x) ∨ P(x))
+
+Applying De Morgan's law:\\
+$\exists x\; (\neg D(x)\; \land\; \neg P(x))$\\
+% Applying De Morgan's law: ∃x (¬D(x) ∧ ¬P(x))
+
+English:\\
+There is a patient who was not given the medication and not given the placebo.\\
+
+\item Every patient who took the placebo had migraines. (Hint: you will need to apply the conditional identity, $p \to q \equiv \neg p \lor q$.)\\\\
+%Enter your answer below this comment line.
+$\forall x\; (P(x)\; \to M(x))$\\
+% ∀x (P(x) → M(x))
+
+Negation:\\
+$\neg \forall x\; (P(x)\; \to M(x))$\\
+% Negation: ¬∀x (P(x) → M(x))
+
+Applying De Morgan's law:\\
+$\exists x\; (P(x)\; \land\; \neg M(x))$\\
+% Applying De Morgan's law: ∃x (P(x) ∧ ¬M(x))
+
+English:\\
+Some patient took the placebo and did not have migraines.\\
+
+\item There is a patient who had migraines and was given the placebo.\\\\
+%Enter your answer below this comment line.
+$\exists x\; (M(x)\; \land\; P(x))$\\
+% ∃x (M(x) ∧ P(x))
+
+Negation:\\
+$\neg \exists x\; (M(x)\; \land\; P(x))$\\
+% Negation: ¬∃x (M(x) ∧ P(x))
+
+Applying De Morgan's law:\\
+$\forall x\; (\neg M(x)\; \lor\; \neg P(x))$\\
+% Applying De Morgan's law: ∀x (¬M(x) ∨ ¬P(x))
+
+English:\\
+Every patient did not have migraines or did not take the placebo.
+\\\\
+\end{enumerate}
+
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+
+\section*{Problem 2}
+
+Use De Morgan's law for quantified statements and the laws of propositional logic to show the following equivalences:\\
+\begin{enumerate}[label=(\alph*)]
+\item $\neg \forall x \, \left(P(x) \land \neg Q(x) \right)\; \equiv \; \exists x \, \left(\neg P(x) \lor  Q(x) \right)$\\\\
+%Enter your answer below this comment line.
+
+Applying De Morgan's law:\\
+$\exists x\, \neg \left(P(x) \land \neg Q(x) \right)$\\\\
+
+Applying De Morgan's law:\\
+$\exists x\, \left( \neg P(x) \lor \neg \neg Q(x) \right)$\\\\
+
+Double negation law:\\
+$\exists x\, \left( \neg P(x) \lor Q(x) \right)$\\\\
+
+\item $\neg \forall x \, \left(\neg P(x) \to Q(x) \right)\; \equiv \; \exists x \, \left(\neg P(x) \land  \neg Q(x) \right)$\\\\
+%Enter your answer below this comment line. TODO
+
+Applying De Morgan's law:\\
+$\exists x \, \neg \left(\neg P(x) \to Q(x) \right)$\\\\
+
+Conditional identity:\\
+$\exists x \, \neg \left(\neg (\neg P(x)) \lor Q(x) \right)$\\\\
+
+Double Negation:\\
+$\exists x \, \neg \left( P(x) \lor Q(x) \right)$\\\\
+
+Applying De Morgan's law:\\
+$\exists x \, \left(\neg P(x) \land \neg Q(x) \right)$\\\\
+
+\item $\neg \exists x \, \big(\neg P(x) \lor \left(Q(x) \land \neg R(x) \right)\big)\; \equiv \; \forall x \,\big( P(x) \land \left( \neg Q(x) \lor R(x) \right)\big)$\\\\
+%Enter your answer below this comment line.
+\\\\
+\end{enumerate}
+
+
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+
+
+
+\section*{Problem 3}
+
+The domain of {\bf discourse} for this problem is a group of three people who are working on a project. To make notation easier, the people are numbered $1, \;2, \;3$. The predicate $M(x,\; y)$ indicates whether x has sent an email to $y$, so $M(2, \;3)$ is read ``Person $2$ has sent an email to person $3$.'' The table below shows the value of the predicate $M(x,\;y)$ for each $(x,\;y)$ pair. The truth value in row $x$ and column $y$ gives the truth value for $M(x,\;y)$.\\\\
+\[
+ \begin{array}{||c||c|c|c||}
+\hline\hline
+M & 1 & 2& 3\\
+\hline\hline
+1 &T & T & T\\
+\hline
+2 &T & F & T\\
+\hline
+3 &T & T & F\\
+\hline\hline
+    \end{array}
+    \]\\\\
+{\bf Determine if the quantified statement is true or false. Justify your answer.}\\
+
+\begin{enumerate}[label=(\alph*)]
+
+\item $\forall x \, \forall y \left(x\not= y)\;\to \;  M(x,\;y)\right)$\\\\
+%Enter your answer below this comment line.
+\\
+For all senders and recievers where the sender and reciver is not the same, then the sender has sent an email to the reciever.
+This is true.
+\\\\
+\item $\forall x \, \exists y \;\; \neg M(x,\;y)$\\\\
+%Enter your answer below this comment line.
+\\
+For all senders there exists a reciever such that the sender is not the reciever.
+This is true because the domain of discourse is not 1 dimensional.
+\\\\
+\item $\exists x \, \forall y \;\; M(x,\;y)$\\\\
+%Enter your answer below this comment line.   
+\\
+There exists a sender for every reciever such that the sender is the reciever.
+This is false because $M(2,\; 2)$ and $M(3,\; 3)$ are False.
+\end{enumerate}
+
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+
+\section*{Problem 4}
+
+Translate each of the following English statements into logical expressions. The domain of {\bf discourse} is the set of all real numbers.\\
+\begin{enumerate}[label=(\alph*)]
+
+\item The reciprocal of every positive number less than one is greater than one.\\\\
+%Enter your answer below this comment line.
+$\forall y\, ((y<1) \land (1/y>1))$
+\\\\
+\item There is no smallest number.\\\\
+%Enter your answer below this comment line.
+$\exists x \, \forall y \, (x<y)$
+\\\\
+
+\item Every number other than 0 has a multiplicative inverse.\\\\
+%Enter your answer below this comment line.
+$\forall x \, \exists y \, \left((x\not= 0)\; \land (xy = 1)\right)$\\\\
+\\\\
+\end{enumerate}
+
+
+
+ \newpage
+%--------------------------------------------------------------------------------------------------
+
+
+\section*{Problem 5}
+The sets $A$, $B$, and $C$ are defined as follows:\\
+
+\[A = {tall, grande, venti}\]
+\[B = {foam, no-foam}\]
+\[C = {non-fat, whole}\]\\
+Use the definitions for $A$, $B$, and $C$ to answer the questions. Express the elements using $n$-tuple notation, not string notation.\\
+\begin{enumerate}[label=(\alph*)]
+
+\item Write an element from the set $A\, \times \,B \, \times \,C$.\\\\
+%Enter your answer below this comment line.
+(grande, no-foam, whole)
+\\\\
+
+\item Write an element from the set $B\, \times \,A \, \times \,C$.\\\\
+%Enter your answer below this comment line.
+(foam, tall, non-fat)
+\\\\
+
+\item Write the set $B \, \times \,C$ using roster notation.\\\\
+%Enter your answer below this comment line.
+$B \, \times \,C$ = $\{(foam, non-fat), (foam, whole), (no-foam, non-fat), (no-foam, whole)\}$
+\\\\
+
+\end{enumerate}
+
+\end{document}

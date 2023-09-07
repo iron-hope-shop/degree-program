@@ -1,0 +1,9 @@
+# Consider the following statement: "In preparing for the Cherokee removal, state and federal officials were motivated solely by desire to seize the natives' land." In your post, consider the following:
+
+# Does this statement present the full picture? Revise this statement to present a more complex explanation of the motivations that drove state and federal officials (and the white citizens of Georgia) during the years immediately preceding the Cherokee removal. Explain the choices you made in your revision.
+"In preparing for the Cherokee removal, state and federal officials were motivated solely by desire to seize the natives' land."
+
+This statement does not present the full picture because state and federal officials had more motivations than claiming territory.  Settlers and early Americans failed to control the Cherokee American population and as a result were unable to tap many resources that would have been available.  Many Native American tribes resisted Christianity and refused to be part of the settlers' society.  Gold, land, and manpower were vital resources for governments who were willing to endure conflict for them.
+
+# Next, consider how you can take a similar approach to your own topic in order to more fully understand the historical complexity. What other viewpoints would you want to further explore in order to more fully understand your topic?
+My topic is Prohibition and it would be reasonable to view it using different historical lenses in order to understand the historical complexity. I have mainly explored the topic from militaristic and socio economic viewpoints. In order to fully understand and convey my message I could view the topic from a religious perspective; for example, including the fact that the ideology of prohibition law began as a religious movement.  Overall, the motivations tied to morality and the reason that Prohibition inevitably failed would add value to my research paper.

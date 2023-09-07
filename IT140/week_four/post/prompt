@@ -1,0 +1,40 @@
+In this module, you are working with lists and dictionaries. Consider the following scenario before you make your initial post.
+
+Lists and dictionaries in Python are similar in that they are both used to store a collection of other data. In many cases, a programmer could use either one effectively to achieve a particular goal. Imagine a collection of some sort of data and propose which collection data type, a list or a dictionary, you would choose.
+For your initial post, determine whether dictionaries or lists are the most efficient method, and provide a rationale based on what you learned in this module to support your decision.
+
+To complete this assignment, review the Discussion Rubric document.
+
+In day-to-day programming, I use both lists and dictionaries.  Lists and dictionaries in python each have their own use cases.  For example, list comprehensions are very useful when writing concise code.  Meanwhile, dictionaries are useful when handling JSON blocks.  Both lists and dictionaries might be useful when creating a block chain.  In terms of efficiency, I would evaluate that according to the task.
+
+An example of a use case where dictionaries would be more efficient than lists would be inventory.  Dictionaries are generally faster to read from than lists because of the unordered way they are stored.  A simple list or a lists of lists could be used to manage inventory; however, this would be much slower.  Below is a small Python test I ran to prove that dictionaries surpass the limits of lists in this context (executed one million times each):
+
+
+import timeit
+
+def testDict():
+    d = {
+    'eggs': 540,
+    'bread': 74,
+    'toilet paper': 999
+    }
+    dv = d.get('bread')
+    return dv
+
+def testList():
+    l = [
+    'eggs', 540,
+    'bread', 74,
+    'toiler paper', 999
+    ]
+    i = l.index('bread') + 1
+    lv = l[i]
+    return lv
+
+if __name__ == '__main__':
+    print(f'Dictionary speed: {timeit.timeit("testDict()", setup="from __main__ import testDict", number=1000000):.5f} seconds.')
+    print(f'List speed: {timeit.timeit("testList()", setup="from __main__ import testList", number=1000000):.5f} seconds.')
+
+> python3 .\dvl.py
+Dictionary speed: 0.46175 seconds.
+List speed: 0.60943 seconds.

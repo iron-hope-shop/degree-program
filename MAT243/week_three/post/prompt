@@ -1,0 +1,107 @@
+Use the link in the Jupyter Notebook activity to access your Python script. Once you have made your calculations, complete this discussion. The script will output answers to the questions given below. You must attach your Python script output as an HTML file and respond to the questions below.
+
+In this discussion, you will apply the statistical concepts and techniques covered in this week's reading to calculate a confidence interval and perform hypothesis testing for a manufacturing process.
+
+The manufacturing process at a factory produces ball bearings that are sold to automotive manufacturers. The factory wants to estimate the average diameter of a ball bearing that is in demand to ensure that it is manufactured within the specifications. Suppose they plan to collect a sample of 50 ball bearings and measure their diameters to construct a 90% and 99% confidence interval for the average diameter of ball bearings produced from this manufacturing process.
+
+The sample of size 50 was generated using Python’s numpy module. This data set will be unique to you, and therefore your answers will be unique as well. Run Step 1 in the Python script to generate your unique sample data. Check to make sure your sample data is shown in your attachment.
+
+In your initial post, address the following items. Be sure to answer the questions about both confidence intervals and hypothesis testing.
+
+In the Python script, you calculated the sample data to construct a 90% and 99% confidence interval for the average diameter of ball bearings produced from this manufacturing process. These confidence intervals were created using the Normal distribution based on the assumption that the population standard deviation is known and the sample size is sufficiently large. Report these confidence intervals rounded to two decimal places. See Step 2 in the Python script.
+Interpret both confidence intervals. Make sure to be detailed and precise in your interpretation.
+
+>The statistics above show that we can say with a 90% probability that the diameter of ball bearings produced by this process will be between 2.39 and 2.62; futhermore, we can broaded our statement to include 99% of the bearings whose diameters will probabilistically fall between 2.33 and 2.69.
+
+It has been claimed from previous studies that the average diameter of ball bearings from this manufacturing process is 2.30 cm. Based on the sample of 50 that you collected, is there evidence to suggest that the average diameter is greater than 2.30 cm? Perform a hypothesis test for the population mean at alpha = 0.01.
+
+>According to the calculation above, the average diameter of ball bearings from this manufacturing process is 2.51, which suggests that there is flaw in the previous studies or that quality control has declined.
+
+In your initial post, address the following items:
+Define the null and alternative hypothesis for this test in mathematical terms and in words.
+
+>The null hypothesis is that the average diameter of the ball bearings from this sample is 2.30, represented by:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>=</mo>
+      <msub>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mn>0</mn>
+      </msub>
+      
+  <mspace linebreak="newline" />
+      <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>=</mo>
+        <mn>2.30</mn>
+    </math>
+
+>The alternative hypothesis is that, based on the mean of the population, the average diameter of the ball bearings from this sample is not equal to 2.30 (in a two-tailed scenario).  This is represented by:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+    <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>&#x2260;</mo>
+      <msub>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mn>0</mn>
+      </msub>
+      
+  <mspace linebreak="newline" />
+      <msub>
+        <mi>H</mi>
+        <mn>0</mn>
+      </msub>
+      <mo>:</mo>
+      <mi>&#x03BC;<!-- μ --></mi>
+      <mo>&#x2260;</mo>
+        <mn>2.30</mn>
+    </math>
+
+Our ztest class method is using the following equation to determine the p-value:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>z</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mover>
+          <mi>x</mi>
+          <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+        </mover>
+      </mrow>
+      <mo>&#x2212;<!-- − --></mo>
+      <msub>
+        <mi>&#x03BC;<!-- μ --></mi>
+        <mn>0</mn>
+      </msub>
+    </mrow>
+    <mfrac>
+      <mi>&#x03C3;<!-- σ --></mi>
+      <msqrt>
+        <mi>n</mi>
+      </msqrt>
+    </mfrac>
+  </mfrac>
+</math>
+
+Report the level of significance.
+Include the test statistic and the P-value. See Step 3 in the Python script. (Note that Python methods return two tailed P-values. You must report the correct P-value based on the alternative hypothesis.)
+Provide your conclusion and interpretation of the results. Should the null hypothesis be rejected? Why or why not?
+
+As stated above, he level of significance is 0.0100 and the p-value is 0.0059.  The p-value is less than the level of significance, thus the is significantly different from 2.30.  It is for this reason that we can reject the null hypothesis and adopt the alternative hypothesis that the mean of this sample is not equal (or even close) to 2.30.

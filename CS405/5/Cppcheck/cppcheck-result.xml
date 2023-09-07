@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.10"/>
+    <errors>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562" file0="QuestionableCode.cpp">
+            <location file="QuestionableCode.cpp" line="59" column="3"/>
+        </error>
+        <error id="throwInNoexceptFunction" severity="error" msg="Exception thrown in function declared not to throw exceptions." verbose="Exception thrown in function declared not to throw exceptions." cwe="398" file0="QuestionableCode.cpp">
+            <location file="QuestionableCode.cpp" line="52" column="5"/>
+        </error>
+        <error id="invalidContainer" severity="error" msg="Using iterator to local container &apos;items&apos; that may be invalid." verbose="Using iterator to local container &apos;items&apos; that may be invalid." cwe="664" inconclusive="true" file0="QuestionableCode.cpp">
+            <location file="QuestionableCode.cpp" line="87" column="30"/>
+            <location file="QuestionableCode.cpp" line="82" column="20" info="Variable created here."/>
+            <location file="QuestionableCode.cpp" line="89" column="13" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="QuestionableCode.cpp" line="87" column="35" info="Assuming condition is true."/>
+            <location file="QuestionableCode.cpp" line="88" column="15" info="Assuming condition is true."/>
+            <location file="QuestionableCode.cpp" line="88" column="15" info="Assuming condition is true."/>
+            <location file="QuestionableCode.cpp" line="87" column="26" info="Iterator to container is created here."/>
+        </error>
+    </errors>
+</results>

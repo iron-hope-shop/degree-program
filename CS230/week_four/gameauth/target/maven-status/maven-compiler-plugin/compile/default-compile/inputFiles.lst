@@ -1,0 +1,11 @@
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/auth/GameUser.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/GameAuthConfiguration.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/controller/GameUserRESTController.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/auth/GameAuthenticator.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/representations/GameUserInfo.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/dao/GameUserDB.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/GameAuthApplication.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/controller/RESTClientController.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/auth/GameAuthorizer.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/healthcheck/AppHealthCheck.java
+/Users/goldsmith/apps/school/snhu/CS230/week_four/gameauth/src/main/java/com/gamingroom/gameauth/healthcheck/HealthCheckController.java

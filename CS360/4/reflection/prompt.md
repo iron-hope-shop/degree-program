@@ -1,0 +1,6 @@
+# What is one thing you have learned from your experience with Project One?
+My experience with our first project taught me that user experience should be considered before planning backend implementations.  It is too often that product owners or engineers are determined on using a certain tech stack or framework to meet user needs when the entire system architecture could me made better if it were oriented around what the user wants and needs.  I was not very familiar with mobile application design but it is oriented around the frontend with very simple backend integrations.  This is the opposite way I have been taught to engineer systems.  Usually we are focused on the backend and the interface, whatever that might mean, is a product of the frameworks we used for the backend.
+# What is one question you still have about mobile application design?
+One question I still have about mobile application design is what is the best way to gather market data in the real world if I want to make an app on my own?
+# What is one way you will apply your learning from Project One in the future?
+Project one is the amalgam of all our learning in this course until that point.  I will apply the principles I learned throughout the textbook such as working with activity lifecycles, layouts, and widgets in our next project.

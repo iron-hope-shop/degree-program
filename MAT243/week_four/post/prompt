@@ -1,0 +1,28 @@
+Suppose that the factory claims that the proportion of ball bearings with diameter values less than 2.20 cm in the existing manufacturing process is the same as the proportion in the new process. At alpha=0.05, is there enough evidence that the two proportions are the same? Perform a hypothesis test for the difference between two population proportions to test this claim.
+
+In your initial post, address the following items:
+
+Define the null and alternative hypotheses in mathematical terms as well as in words.
+
+Identify the level of significance.
+Include the test statistic and the P-value. See Step 2 in the Python script. (Note that Python methods return two tailed P-values. You must report the correct P-value based on the alternative hypothesis.)
+Provide a conclusion and interpretation of the test: Should the null hypothesis be rejected? Why or why not?
+
+
+
+The null hypothesis is that the diameter of a ball bearing from the old and new processes meet the same specifications. This is shown by:
+<img src="https://latex.codecogs.com/gif.latex?H_{0}:p_{1}=p_{2}" title="H_{0}:p_{1}=p_{2}"/>
+
+Since the factory is asking if the proportion of old bearings and new bearings are equal, the alternative hypothesis is that they are not equal.  This is shown mathematically by:
+
+<img src="https://latex.codecogs.com/gif.latex?H_{\alpha}:p_{1}\neq&space;p_{2}" title="H_{\alpha}:p_{1}\neq p_{2}" />
+
+As shown above, the test statistic is -1.67 and the p-value (rounded) is 0.096.  From the prompt, we know the level of significance is 0.05.  Because the p-value is greater than the significance level (0.096 > 0.05), insufficient evidence exists to suggest that population proportions for new and old ball bearings are different.
+
+<!--responses -->
+
+In your follow-up posts to other students, review your peers' analyses and address the following questions:
+
+How does your conclusion compare to theirs?
+Do they have the correct conclusion based on their P-value and the level of significance? Why or why not?
+

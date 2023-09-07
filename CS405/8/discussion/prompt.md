@@ -1,0 +1,10 @@
+"No one is safe" (zero trust) is a security best practice.
+
+Apply the "no one is safe" (zero trust) policy and consider the following questions:
+# How does this concept change the way you think about security to incorporate zero trust?
+
+# Now, how will this impact you as a user?
+
+# How will you persuade developers who oppose zero trust to get on board?
+
+Zero trust is a concept which means no one is safe.  This also means no data is safe.  No system is safe, either.  Zero trust is a relatively new concept to me.  When I joined an InfoSec team I came in with a pre-existing account that already had some access from my prior role.  I am in the identity space so minimizing roles and access is a big deal; however, I noticed I still had my old access!  It is ironic how, as a member of my organization's identity team, I had to callout my own access.  This changed the way I viewed security as a whole.  I realized that organizational security is a living thing and should not be neglected or hindered from growing.  Today we are actively working on resolving issues like this but job transfers have been happening for years and people have access they should not.  It is not that we do not trust these co-workers.  At some point in time they had the access for a reason (we hope).  If their account gets compromised, it is the responsability of the organization's InfoSec pillar to mitigate possible damage to the business.  I would urge developers who oppose zero trust to open their eyes to the fact that temporary access is a thing.  A lot of "lifers," (more often in non-technical roles) when informed of zero trust enforcement will argue "I haven't used it in X amount of time but what if I need that access in the future?"  To that I would say, request the access again when you need it.  We are not taking tools away from you, we are protecting the business and your role here!

@@ -1,0 +1,136 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+  <p style="text-align: left; font-weight: bold;">
+    Brad Jackson
+                            <!-- UPDATE -->
+    <span style="float: right">
+      06/24/2021
+                                          <!-- UPDATE -->
+    </span>
+    <br>
+    MAT 230
+                            <!-- UPDATE -->
+    <br>
+    Discussion Board: Week Eight
+                            <!-- UPDATE -->
+  </p>
+  <h1 style="text-align:center!important;">
+    Cryptography
+                            <!-- UPDATE -->
+  </h1>
+</head>
+<body style="text-align:justify;">
+  <p style="line-height:2">
+    Below are the steps to encrypt my message:
+    <br>
+    <img src="https://latex.codecogs.com/svg.latex?p=3" title="p=3"/><br>
+    <img src="https://latex.codecogs.com/svg.latex?q=11" title="q=11"/><br>
+    <img src="https://latex.codecogs.com/svg.latex?N=p*q=3*11=33" title="N=p*q=3*11=33"/><br>
+
+    The public keys are
+    <img src="https://latex.codecogs.com/svg.latex?N=33" title="N=33"/>
+    and
+    <img src="https://latex.codecogs.com/svg.latex?e=3" title="e=3"/><br>
+
+    To find the private key,
+    <i>d</i>, we need to find the multiplicative inverse of the public key,
+    <i>e</i>, modulo
+    <i>M</i>.  To find the modulus value,
+    <i>M</i>:
+    <br>
+    <img src="https://latex.codecogs.com/svg.latex?M=(p-1)(q-1)" title="M=(p-1)(q-1)"/><br>
+    <img src="https://latex.codecogs.com/svg.latex?M=2*10=20" title="M=2*10=20"/><br>
+
+    In this case
+    <img src="https://latex.codecogs.com/svg.latex?d=7" title="d=7"/>
+    is the inverse of 3 mod 20.
+                    
+                    Using
+    <img src="https://latex.codecogs.com/svg.latex?C=M^emodN" title="C=M^emodN"/>
+    my message is:<br>
+    26 21 12 26 24 32 27 03 24 27 21 03 14 28 32 01 05 31 32 14 24 01 03 12 28
+                            <!-- UPDATE -->
+  </p>
+  <p>
+    I wrote a Python (3.7.7) script to encode/decode and encrypt/decrypt the messages.<br>
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+      <pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">alphabet</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[</span>
+    <span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;b&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;c&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;d&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;e&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;f&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;g&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;h&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;i&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;j&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;k&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;l&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;m&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;n&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;o&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;p&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;q&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;r&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;s&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;t&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;u&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;v&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;w&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;x&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;y&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #e6db74">&quot;z&quot;</span><span style="color: #f8f8f2">,</span>
+<span style="color: #f8f8f2">]</span>
+
+<span style="color: #f8f8f2">s</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;yOUr mesSAGe HeRe&quot;</span>
+
+<span style="color: #f8f8f2">encoded_message</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">s</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">lower():</span>
+    <span style="color: #66d9ef">try</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">pos</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">str(alphabet</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">index(i)</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">)</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(pos)</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:</span>
+            <span style="color: #f8f8f2">pos</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">f</span><span style="color: #e6db74">&quot;0{pos}&quot;</span>
+    <span style="color: #66d9ef">except</span> <span style="color: #a6e22e">ValueError</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">pos</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;32&quot;</span>
+    <span style="color: #f8f8f2">encoded_message</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(pos)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(f</span><span style="color: #e6db74">&quot;</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Encoded message: {encoded_message}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">e</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">3</span>
+<span style="color: #f8f8f2">N</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">33</span>
+<span style="color: #f8f8f2">encrypted_message</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">encoded_message:</span>
+    <span style="color: #f8f8f2">C</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">str((int(x)</span> <span style="color: #f92672">**</span> <span style="color: #f8f8f2">e)</span> <span style="color: #f92672">%</span> <span style="color: #f8f8f2">N)</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(C)</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">C</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">f</span><span style="color: #e6db74">&quot;0{C}&quot;</span>
+    <span style="color: #f8f8f2">encrypted_message</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(C)</span>
+<span style="color: #f8f8f2">ez_copy_pasta</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot; &quot;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">join(encrypted_message)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(</span>
+    <span style="color: #f8f8f2">f</span><span style="color: #e6db74">&quot;Encrypted message: {encrypted_message}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">Joined for easy copy pasta: {ez_copy_pasta}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span>
+<span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">7</span>
+<span style="color: #f8f8f2">decrypted_message</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">[]</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">encrypted_message:</span>
+    <span style="color: #f8f8f2">D</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">str((int(x)</span> <span style="color: #f92672">**</span> <span style="color: #f8f8f2">d)</span> <span style="color: #f92672">%</span> <span style="color: #f8f8f2">N)</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">len(D)</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">D</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">f</span><span style="color: #e6db74">&quot;0{D}&quot;</span>
+    <span style="color: #f8f8f2">decrypted_message</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">append(D)</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(f</span><span style="color: #e6db74">&quot;Decrypted message: {decrypted_message}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">)</span>
+
+<span style="color: #f8f8f2">decoded_message</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;&quot;</span>
+<span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">decrypted_message:</span>
+    <span style="color: #66d9ef">try</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">letter</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">alphabet[int(i)</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">]</span>
+    <span style="color: #66d9ef">except</span> <span style="color: #a6e22e">IndexError</span><span style="color: #f8f8f2">:</span>
+        <span style="color: #f8f8f2">letter</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot; &quot;</span>
+    <span style="color: #f8f8f2">decoded_message</span> <span style="color: #f92672">+=</span> <span style="color: #f8f8f2">letter</span>
+<span style="color: #66d9ef">print</span><span style="color: #f8f8f2">(f</span><span style="color: #e6db74">&quot;Decoded message: {decoded_message}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">)</span>
+</pre>
+    </div>
+  </p>
+</body>

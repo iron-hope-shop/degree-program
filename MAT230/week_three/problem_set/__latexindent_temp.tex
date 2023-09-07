@@ -1,0 +1,356 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+%\documentclass{amsart}
+%\usepackage{txfonts}
+%\documentclass[12pt,oneside]{article}
+\documentclass{amsart}
+\usepackage{graphicx}
+\usepackage{enumitem,xcolor}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{Exercise}
+\newtheorem{ex}[thm]{Exercise}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\theoremstyle{rule}
+\newtheorem{rul}[thm]{Rule}
+
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\bB(X)}
+\newcommand{\A}{\mathcal{A}}
+% ----------------------------------------------------------------
+
+% define some simple, commonly-used commands
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\dint}{\displaystyle\int}
+
+\newcommand{\pdr}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\pdrr}[2]{\dfrac{\partial^2{#1}}{\partial{#2}^2}}
+\newcommand{\pdrt}[3]{\dfrac{\partial^2{#1}}{\partial{#2}{\partial{#3}}}}
+\newcommand{\dr}[2]{\dfrac{d{#1}}{d{#2}}}
+\newcommand{\aver}[1]{\langle {#1} \rangle}
+\newcommand{\Baver}[1]{\Big\langle {#1} \Big\rangle}
+
+\newcommand{\bzero}{\mathbf 0}
+\newcommand{\bGamma}{\mbox{\boldmath{$\Gamma$}}}
+\newcommand{\btheta}{\boldsymbol \theta}
+\newcommand{\bchi}{\mbox{\boldmath{$\chi$}}}
+\newcommand{\bnu}{\boldsymbol \nu}
+\newcommand{\bmu}{\boldsymbol \mu}
+\newcommand{\brho}{\mbox{\boldmath{$\rho$}}}
+\newcommand{\bxi}{\boldsymbol \xi}
+\newcommand{\bnabla}{\boldsymbol \nabla}
+\newcommand{\bOm}{\boldsymbol \Omega}
+\newcommand{\blambda}{\boldsymbol \lambda}
+\newcommand{\bsigma}{\boldsymbol \sigma}
+
+\newcommand{\bbR}{\mathbb R}
+\newcommand{\bbC}{\mathbb C}
+\newcommand{\bbQ}{\mathbb Q}
+\newcommand{\bbN}{\mathbb N}
+\newcommand{\bbZ}{\mathbb Z}
+
+\newcommand{\ba}{\mathbf a} \newcommand{\bb}{\mathbf b}
+\newcommand{\bc}{\mathbf c} \newcommand{\bd}{\mathbf d}
+\newcommand{\be}{\mathbf e} \newcommand{\bff}{\mathbf f}
+\newcommand{\bg}{\mathbf g} \newcommand{\bh}{\mathbf h}
+\newcommand{\bi}{\mathbf i} \newcommand{\bj}{\mathbf j}
+\newcommand{\bk}{\mathbf k} \newcommand{\bl}{\mathbf l}
+\newcommand{\bm}{\mathbf m} \newcommand{\bn}{\mathbf n}
+\newcommand{\bo}{\mathbf o} \newcommand{\bp}{\mathbf p}
+\newcommand{\bq}{\mathbf q} \newcommand{\br}{\mathbf r}
+\newcommand{\bs}{\mathbf s} \newcommand{\bt}{\mathbf t}
+\newcommand{\bu}{\mathbf u} \newcommand{\bv}{\mathbf v}
+\newcommand{\bw}{\mathbf w} \newcommand{\bx}{\mathbf x}
+\newcommand{\by}{\mathbf y} \newcommand{\bz}{\mathbf z}
+\newcommand{\bA}{\mathbf A} \newcommand{\bB}{\mathbf B}
+\newcommand{\bC}{\mathbf C} \newcommand{\bD}{\mathbf D}
+\newcommand{\bE}{\mathbf E} \newcommand{\bF}{\mathbf F}
+\newcommand{\bG}{\mathbf G} \newcommand{\bH}{\mathbf H}
+\newcommand{\bI}{\mathbf I} \newcommand{\bJ}{\mathbf J}
+\newcommand{\bK}{\mathbf K} \newcommand{\bL}{\mathbf L}
+\newcommand{\bM}{\mathbf M} \newcommand{\bN}{\mathbf N}
+\newcommand{\bO}{\mathbf O} \newcommand{\bP}{\mathbf P}
+\newcommand{\bQ}{\mathbf Q} \newcommand{\bR}{\mathbf R}
+\newcommand{\bS}{\mathbf S} \newcommand{\bT}{\mathbf T}
+\newcommand{\bU}{\mathbf U} \newcommand{\bV}{\mathbf V}
+\newcommand{\bW}{\mathbf W} \newcommand{\bX}{\mathbf X}
+\newcommand{\bY}{\mathbf Y} \newcommand{\bZ}{\mathbf Z}
+
+\newcommand{\cA}{\mathcal A} \newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C} \newcommand{\cD}{\mathcal D}
+\newcommand{\cE}{\mathcal E} \newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G} \newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I} \newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K} \newcommand{\cL}{\mathcal L}
+\newcommand{\cM}{\mathcal M} \newcommand{\cN}{\mathcal N}
+\newcommand{\cO}{\mathcal O} \newcommand{\cP}{\mathcal P}
+\newcommand{\cQ}{\mathcal Q} \newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S} \newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U} \newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W} \newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y} \newcommand{\cZ}{\mathcal Z}
+
+
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\chead{\includegraphics[scale=.1]{snhu_logo.png}}
+
+\begin{document}
+\begin{center}
+\includegraphics[scale=.1]{snhu_logo.png}
+\end{center}
+\title{\sf Module Three Problem Set}%
+
+
+%\thm{bbjh}
+\maketitle
+This document is proprietary to Southern New Hampshire University. It and the problems within may not be posted on any non-SNHU website.\\\\\\\\
+\begin{center}
+%Enter your name below this line:
+Brad Jackson
+\end{center}
+
+
+\begin{center}
+\rule{\textwidth}{0.4pt}
+\end{center}
+
+
+\newpage
+\section*{}
+\section*{}
+Directions: Type your solutions into this document and be sure to show all steps for arriving at your solution. Just giving a final number may not receive full credit.
+\\\\
+
+
+
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 1}
+
+A 125-page document is being printed by five printers. Each page will be printed exactly once.
+\begin{enumerate}[label=(\alph*)]
+\item  Suppose that there are no restrictions on how many pages a printer can print. How many ways are there for the 125 pages to be assigned to the five printers?\\\\
+{\it One possible combination: printer A prints out pages 2-50, printer B prints out pages 1 and 51-60, printer C prints out 61-80 and 86-90, printer D prints out pages 81-85 and 91-100, and printer E prints out pages 101-125.}\\\\
+%Enter your answer below this comment line.
+5^{125} = 2.35e+87
+
+\item Suppose the first and the last page of the document must be printed in color, and only two printers are able to print in color. The two color printers can also print black and white. How many ways are there for the 125 pages to be assigned to the five printers?\\\\
+%Enter your answer below this comment line.
+2^{2}\ast 5^{123} = 3.76e+86
+
+\item Suppose that all the pages are black and white, but each group of 25 consecutive pages (1-25, 26-50, 51-75, 76-100, 101-125) must be assigned to the same printer. Each printer can be assigned 0, 25, 50, 75, 100, or 125 pages to print. How many ways are there for the 125 pages to be assigned to the five printers?\\\\
+%Enter your answer below this comment line.
+5^{5} = 3125
+\\\\
+\end{enumerate}
+\newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 2}
+Ten kids line up for recess. The names of the kids are:\\
+\begin{center}
+ \{Alex, Bobby, Cathy, Dave, Emy, Frank, George, Homa, Ian, Jim\}.\\
+\end{center}
+Let $S$ be the set of all possible ways to line up the kids. For example, one order might be:
+\begin{center}
+  (Frank, George, Homa, Jim, Alex, Dave, Cathy, Emy, Ian, Bobby)\\
+\end{center}
+
+The names are listed in order from left to right, so Frank is at the front of the line and Bobby is at the end of the line.\\
+
+Let $T$ be the set of all possible ways to line up the kids in which George is ahead of Dave in the line. Note that George does not have to be immediately ahead of Dave. For example, the ordering shown above is an element in $T$.\\
+
+Now define a function $f$ whose domain is $S$ and whose target is $T$. Let $x$ be an element of $S$, so $x$ is one possible way to order the kids. If George is ahead of Dave in the ordering $x$, then $f(x) = x$. If Dave is ahead of George in $x$, then $f(x)$ is the ordering that is the same as $x$, except that Dave and George have swapped places.\\
+
+% \textcolor{blue}{Example:  $f$ maps element (George, Homa, Frank, Alex, Jim, Dave, Ian, Bobby, Cathy, Emy) to (George, Homa, Frank, Alex, Jim, Dave, Ian, Bobby, Cathy, Emy) because George comes before Dave.  \\However $f$ maps (Homa, Frank, Alex, Jim, Dave, Ian, Bobby, Cathy, Emy, George) to (Homa, Frank, Alex, Jim, George, Ian, Bobby, Cathy, Emy, Dave) because George came after Dave in the input.}
+
+\begin{enumerate}[label=(\alph*)]
+  \item What is the output of $f$ on the following input?\\
+  (Frank, George, Homa, Jim, Alex, Dave, Cathy, Emy, Ian, Bobby)\\\\
+%Enter your answer below this comment line.
+No change: (Frank, George, Homa, Jim, Alex, Dave, Cathy, Emy, Ian, Bobby) maps to (Frank, George, Homa, Jim, Alex, Dave, Cathy, Emy, Ian, Bobby) because George is already ahead of Dave in line.
+
+\\\\
+  \item What is the output of $f$ on the following input?\\
+(Emy, Ian, Dave, Homa, Jim, Alex, Bobby, Frank, George, Cathy)\\\\
+%Enter your answer below this comment line.
+(Emy, Ian, Dave, Homa, Jim, Alex, Bobby, Frank, George, Cathy) maps to (Emy, Ian, George, Homa, Jim, Alex, Bobby, Frank, Dave, Cathy) because George is infront of Dave and they swap places.
+\\\\\
+  \item Is the function $f$ a $k$-to-1 correspondence for some positive integer $k$? If so, for what value of $k$? Justify your answer.\\\\
+  
+  \textcolor{blue}{How many inputs map to any ordering?  For example, how many inputs map to (Homa, Frank, Alex, Jim, Dave, Ian, Bobby, Cathy, Emy, George)?}
+%Enter your answer below this comment line.
+The function $f$ is a $k$-to-1 correspondence for some positive integer $k$ as shown below:\\
+There are 10 kids per line.\\
+$f(k)$ = $T$ if kid $k$ belongs to line $T$\\
+$k$/10 = $T$\\
+\\\\
+  \item There are 3628800 ways to line up the 10 kids with no restrictions on who comes before whom. That is, $|S| =3628800$. Use this fact and the answer to the previous question to determine $|T|$.\\\\
+%Enter your answer below this comment line.
+$|S| = 10! = 3628800$\\
+$|T| = 10! - 8! = 3588480$\\
+\\\\
+\end{enumerate}
+
+   
+   \newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 3}
+   
+   
+\item Consider the following definitions for sets of characters:
+\begin{itemize}
+  \item Digits $\;=\; \{ 0,\, 1,\, 2,\, 3,\, 4,\, 5,\, 6,\, 7,\, 8,\, 9 \}$\\
+  \item Letters$\; = \;\{ a,\, b,\, c, \,d,\, e,\, f,\, g,\, h,\, i,\, j,\, k,\, l,\, m,\, n,\, o,\, p,\, q,\, r,\, s,\, t,\, u,\, v,\, w,\, x,\, y,\, z \}$\\
+  \item Special characters $\;=\; \{ *,\, \&,\, \$,\, \# \}$\\
+\end{itemize}
+
+Compute the number of passwords that satisfy the given constraints.
+    \begin{enumerate}[label=(\roman*)]
+    \item Strings of length 7. Characters can be special characters, digits, or letters, with no repeated characters.\\\\
+%Enter your answer below this comment line.
+40!/33!=93963542400\\
+
+\\\\
+    \item Strings of length 6. Characters can be special characters, digits, or letters, with no repeated characters. The first character can not be a special character.\\\\
+%Enter your answer below this comment line.
+36*(39!/33!)=84567188160\\
+      \end{enumerate}
+ \newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 4}
+A group of four friends goes to a restaurant for dinner. The restaurant offers 12 different main dishes.\\
+    \begin{enumerate}[label=(\roman*)]
+    \item Suppose that the group collectively orders four different dishes to share. The waiter just needs to place all four dishes in the center of the table. How many different possible orders are there for the group?\\\\
+%Enter your answer below this comment line.
+12!/8!=11880
+
+\\
+    \item Suppose that each individual orders a main course. The waiter must remember who ordered which dish as part of the order. It's possible for more than one person to order the same dish. How many different possible orders are there for the group?\\\\
+%Enter your answer below this comment line.
+12^{4}=20736
+\\
+
+    \end{enumerate}
+
+
+How many different passwords are there that contain only digits and lower-case letters and satisfy the given restrictions?\\
+      \begin{enumerate}[label=(\roman*), start=3]
+    \item Length is 7 and the password must contain at least one digit.\\\\
+    % \textcolor{blue}{Think about how to remove all the ones that don't have at least one digit.  What does a password contain if doesn't have at least one digit?}
+%Enter your answer below this comment line.
+36^{7}-26^{7}=70332353920
+\\
+\item Length is 7 and the password must contain at least one digit and at least one letter.\\\\
+%Enter your answer below this comment line.
+36^{7}-26^{7}-10^{7}=70322353920
+\\
+    \end{enumerate}
+ 
+ \newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 5}
+
+A university offers a Calculus class, a Sociology class, and a Spanish class. You are given data below about two groups of students.\\\\
+     \begin{enumerate}[label=(\roman*)]
+     \item Group 1 contains 170 students, all of whom have taken at least one of the three courses listed above. Of these, 61 students have taken Calculus, 78 have taken Sociology, and 72 have taken Spanish. 15 have taken both Calculus and Sociology, 20 have taken both Calculus and Spanish, and 13 have taken both Sociology and Spanish. How many students have taken all three classes?\\\\
+%Enter your answer below this comment line.
+Let A, B, and C denote the sets of students that have taken calculus, sociology, and Spanish, respectively.\\
+\mid A\cup B\cup C \mid = \mid A\mid + \mid B\mid + \mid C\mid - (\mid A\cap B\mid + \mid A\cap C\mid + \mid B\cap C\mid) + \mid A\cap B\cap C \mid\\
+170 = 61 + 78 + 72 - (15 + 20 + 13) + \mid A\cap B\cap C \mid\\
+170 = 163 + \mid A\cap B\cap C \mid\\
+7 = \mid A\cap B\cap C \mid\\
+7 Students have taken all three classes.
+\\\\\
+   
+\item You are given the following data about Group 2. 32 students have taken Calculus, 22 have taken Sociology, and 16 have taken Spanish. 10 have taken both Calculus and Sociology, 8 have taken both Calculus and Spanish, and 11 have taken both Sociology and Spanish. 5 students have taken all three courses while 15 students have taken none of the courses. How many students are in Group 2?\\\\
+%Enter your answer below this comment line.
+Let A, B, and C denote the sets of students that have taken calculus, sociology, and Spanish, respectively.\\
+\mid A\cup B\cup C \mid = 32 + 22 + 16 - (10 + 8 + 11) + 5 + 15\\
+\mid A\cup B\cup C \mid = 61\\
+Group 2 contains 61 students.
+\\\\\
+         \end{enumerate}
+ \newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 6}
+A coin is flipped five times. For each of the events described below, express the event as a set in roster notation. Each outcome is written as a string of length 5 from $\{H,\, T\}$, such as $HHHTH$. Assuming the coin is a fair coin, give the probability of each event.\\
+
+% \textcolor{blue}{One way to do this is to write out the samples.}
+
+\begin{enumerate}[label=(\alph*)]
+\item The first and last flips come up heads.\\\\\
+$\{HHHHH\}, \{HHHTH\}, \{HHTHH\}, \{HTHHH\}, \{HTTHH\}, \{HTTTH\}, \{HHTTH\}, \{HTHTH\}$ 
+C = 8/32 = 25\%
+%Enter your answer below this comment line.
+
+\\\\\
+\item There are at least two consecutive flips that come up heads.\\\\\
+%Enter your answer below this comment line.
+$\{HHTTT\}, \{THHTT\}, \{TTHHT\}, \{TTTHH\}$ 
+C = 4/32 = 13.5\%
+\\\\\
+\item The first flip comes up tails and there are at least two consecutive flips that come up heads.\\\\\
+%Enter your answer below this comment line.
+$\{THHTT\}, \{TTHHT\}, \{TTTHH\}$ 
+C = 3/32 = 9.375\%
+\\\\\
+\end{enumerate}
+
+ \newpage
+%--------------------------------------------------------------------------------------------------
+
+\section*{Problem 7}
+An editor has a stack of $k$ documents to review.  The order in which the documents are reviewed is random with each ordering being equally likely. Of the $k$ documents to review, two are named ``Relaxation Through Mathematics'' and ``The Joy of Calculus.'' Give an expression for each of the probabilities below as a function of k. Simplify your final expression as much as possible so that your answer does not include any expressions in the form\\
+$
+\Big(
+ \begin{array}{c}
+ a\\
+ b
+    \end{array}
+    \Big)
+$.
+ \begin{enumerate}[label=(\alph*)]
+\item What is the probability that ``Relaxation Through Mathematics'' is first to review?\\\\
+%Enter your answer below this comment line.
+$(k-1)!/k! = 1/k$
+\\\\
+\item What is the probability that ``Relaxation Through Mathematics'' and ``The Joy of Calculus'' are next to each other in the stack?\\\\\
+% \textcolor{blue}{If you're not sure how to attack this one, maybe try picking a value for k and look for a pattern.}
+%Enter your answer below this comment line.
+$2(k-1)!/k! = 2/k$
+\\\\
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,9 @@
+{
+    "firstName": "Brad",
+    "lastName": "Jackson",
+    "level": 28,
+    "currentJob": "Engineer",
+    "currentLocation": "AR",
+    "married": true,
+    "hasChildren": true
+}

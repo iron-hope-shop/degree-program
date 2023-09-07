@@ -1,0 +1,8 @@
+# Which communication practice (such as information radiator, Scrum events, and so on) do you think would be most effective in creating openness and transparency within a Scrum Team? Why?
+I think that the practice of daily standups would be most effective in creating openness and transparency within a Scrum Team.  This is because the very nature of standups encourages openness.  Teams meet daily to share what they have done, what they are going to do, and any blocks they have.  It helps know what is going on internally as well as stay socially connected with your team.
+
+# What is an example of a communication practice from this course that helped your team complete their work? Consider an example from the SNHU Travel assignments or from the group discussions.
+The focus group for meeting with end users from module three was effective in helping my team complete their work.  The product owner was able to extract needs from the end users and I was able to translate it to stories for the development team.
+
+# What is one way that an agile project-management tool (such as JIRA, Azure Boards, or RTC) can help coordinate and increase efficiency within the team? Be sure to consider a tool and not a Scrum event.
+An agile project-management tool, such as JIRA, can help coordinate and increase efficiency within a team by contributing to transparency and openness.  Platforms such as this encourage collaboration and transparency.

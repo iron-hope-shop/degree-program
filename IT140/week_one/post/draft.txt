@@ -1,0 +1,14 @@
+One of the most important aspects of an online course is the interaction between you and your fellow students. Now that you have reviewed the syllabus, write and post your self-introduction, including your educational and employment background related to the topics of this course. Also, include a response to one of the following:
+
+One or two specific goals related to scripting that you want to accomplish by the end of the course
+How this course can contribute to your career goals
+Your excitement, challenges, or apprehensions as you begin this course
+This discussion provides a great opportunity for you and your fellow students to get to know each other. Make sure that your post is well-written, grammatically correct, and informative.
+
+I am Brad.  I am twenty-five years old.  I hail from the not-so-mean streets of Sugar Land, Texas.  I spent most of my life there.  My first college experience was at Sam Houston State University where I studied Banking and Financial Institutions.  I did not finish my degree.  I moved to Northwest Arkansas and began working in information technology at the Wal-Mart home office.  I have had one prior semester of online learning prior to this.
+
+My professional experience varies; however, I have a focus in technology.  I deal with application and infrastructure teams daily.  This has allowed me to gain insight on the small moving parts between development, operations, and functional product.  I have experience with Python, which I began using about three years ago.  I have deployed production applications using Python and I am excited for this refresher.
+
+This course will ultimately contribute to my career goals by providing me with some collegiate experience with Python.  I think that a refresher is always a great thing, especially when I get college credits for it!  I hope to employ my current Python knowledge to the exercises to the best of my ability.
+
+I strongly disagree with Python being demoted to a "scripting" language.  I know that the foundations of YouTube and Instagram were built on Python and Instagram still uses Django.  While most of the tooling I use for server administration are in Python, the sky is the limit.  I hope that my peers who have not dabbled in programming realize the true value of Python as a toolbelt for getting things done. 

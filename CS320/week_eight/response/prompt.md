@@ -1,0 +1,5 @@
+# highlight any other ways that software automation may improve efficiency or change the field of software development
+
+The one con I can think of is that by over-relying on software automation developers may still leave some errors behind that aren't functionality-related. Such errors would include user interface design, speed of potential server-client interaction, and security flaws. Although the tests for security could be automated, I think that those tests would still have to be written by hired hackers who could probably hack the program more efficiently through human interaction than through testing.
+
+It is very important to validate test coverage yourself.  I think it will be a long time before we can tell a machine learning model the functional and non-functional requirements for a project and it write all of the tests.  That being said there are certainly ways to automate UI (like on a mobile app) tests and they are usually integrated in CI/CD pipelines.  Also it is important to note that most companies have a pen testing team which can range from basic testing (for internal solutions) to rigourous pen testing (for external-facing solutions).

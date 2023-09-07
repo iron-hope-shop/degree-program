@@ -1,0 +1,7 @@
+Great post! I'm familiar with Apple's Maps app and I think you did a great job of summarizing its main features and purpose. I'm also intrigued by the Walk FlyOver mode, I didn't know about that feature before.
+
+In terms of similar apps, one that comes to mind is Google Maps. While the two apps have many similarities in terms of navigation and discovery of new locations, Google Maps has some features that Apple's Maps doesn't, such as live traffic information and more detailed information on public transit. I think both apps are effective in displaying data in their own ways, but I find Apple's Maps to be more user-friendly and intuitive. The app's interface is clean and easy to navigate, which makes it easier for users to find what they're looking for.
+
+As for improving the interface, I think adding more customization options for users would be beneficial. For example, allowing users to choose the type of information they want to see on the map, such as only showing restaurants or only showing parking options.
+
+Lastly, I think users would encounter difficulties if they were to only view the raw data, rather than observe it via the app's interface. The app's interface provides context and makes it easier for users to understand the data and make decisions based on it. Without the app's interface, users would have to spend more time understanding the data and figuring out how to use it effectively.

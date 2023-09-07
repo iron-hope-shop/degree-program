@@ -1,0 +1,74 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            07/19/2023
+            <!-- UPDATE -->
+        </span>
+        <br>
+        CS370
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week Three
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        Applying Reinforcement Learning
+        <!-- UPDATE -->
+    </h1>
+</head>
+
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        I'm excited to use what we've been learning about reinforcement learning and apply it to a childhood favorite of
+        mine, Chutes and Ladders! Here's how I'd frame the game using reinforcement learning (RL) concepts:
+
+        **States:**
+
+        - *Starting state:* The agent begins on square one.
+        - *Ending state:* The agent wins the game by landing exactly on square 100.
+        - *Possible actions:* In Chutes and Ladders, the action is determined by a spinner, which has numbers from 1 to
+        6.
+
+        **Rewards:**
+
+        - *Positive rewards:* The agent receives a reward of +1 for each move that brings them closer to square 100.
+        - *Negative rewards:* If the agent lands on a square with a chute (which moves the agent further away from
+        square 100), they get a penalty of -1.
+        - *Winning the game:* A major reward of +10 is given when the agent reaches square 100.
+
+        **Rules:**
+
+        In Chutes and Ladders, the agent moves based on the spinner's outcome. If the agent lands on a ladder, they
+        climb it, moving closer to the 100th square. But if they land on a chute, they slide down, moving further away.
+
+        **Comparison to Markov Decision Process (MDP):**
+
+        My design mirrors the MDP in a couple of ways:
+
+        - *States:* Each square on the board is a state.
+        - *Actions:* Spinner's outcome determines actions leading to state transitions.
+        - *Rewards:* Rewards are given based on the new state.
+
+        Differences from MDP are also present:
+
+        - *Actions Depend on Luck:* Unlike typical MDPs where an agent chooses actions, here the spinner determines the
+        actions.
+        - *Non-Deterministic State Transitions:* Ladders and chutes add a non-deterministic element as landing on them
+        changes the agent's position in a way not directly linked to the action (spinner's outcome).
+        <!-- UPDATE -->
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        In conclusion, using reinforcement learning principles for Chutes and Ladders is a fun way to see how these
+        concepts can adapt to different situations, even when they're less conventional like our game here. It's not a
+        perfect match for MDP due to the game's unique rules, but it's fascinating to explore the similarities and
+        differences!
+        <!-- UPDATE -->
+    </p>
+</body>

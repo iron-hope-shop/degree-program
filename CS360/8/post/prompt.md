@@ -1,0 +1,8 @@
+# How do you interpret user needs and implement them into applications?
+I lean on the market research of others when it comes to interpreting user needs.  For instance, product managers, stakeholders, teammates, etc.  If it is solely based on my judgement I try to gather as much data as possible about the project before making a decision.  I am also very big on cost effectiveness and reducing technical debt.  Whenever I implement what a user has communicated into an application I try to get feedback on it as quickly as possible.  A good rule of thumb is to design applications based on what the user wants not what you want (even if you just learned about some new stack, framework, etc).
+
+# How do you approach designing applications?
+My approach to designing applications is to gather requirements and create a mind map/flow chart.  I try to think of any applications I work on as being object-oriented which helps me better understand and apply concepts.  If I have done a similar project I will reflect on that project.  Building off of past failures and success generally improves the quality of my projects.  I will also reiterate that you should always measure twice and cut once.
+
+# How do you approach developing applications?
+I am biased because I am a developer but by the time I have gotten to the development phase (all projects probably start with some spitballing/small scripts for me) I already know the path I am going to take.  I try to switch between languages for each project just to keep current on frameworks; however, I will not do this if it will become a detriment the process.  I try to build applications in a modular way and deploy them quickly so that I can gather user feedback.

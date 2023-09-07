@@ -1,0 +1,76 @@
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Jory,
+        <!-- UPDATE WITH OP'S NAME -->
+        <span style="float: right">
+            Thursday, October 17, 2019
+            <!-- UPDATE -->
+        </span>
+    </p>
+</head>
+
+<body style="text-align: justify; padding: 8;">
+    <br>
+    <p style="line-height: 2; text-indent: 48px;">
+        Below is the source code for our new project.  IT team was very excited about this one.  Provided with a name, it will match the first occurance.  The only issue is by searching "Mike," or another common name, you will only get the first occurance.  I submit that in the future we modify it to return all matching names.  We could probably append them to a list and pretty print the new data structure.  Anyway, below is what you asked for.
+        <!-- COPY/PASTA AS NEEDED FOR EACH SOURCE YOU HAVE! -->
+    </p>
+    <br>
+    <h3>customer_regex.py:</h3>
+    <code
+        style="background: black; border: 1px solid #ddd; border-left: 3px solid #96e01e; color: #96e01e; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;">
+        #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3<br>
+        import csv<br>
+        import re<br>
+        data = []<br>
+        <br>
+        with open('customerData.csv') as csvfile:<br>
+        &nbsp;reader = csv.DictReader(csvfile)<br>
+        &nbsp;for row in reader:<br>
+        &nbsp;&nbsp;data.append(row)<br>
+        <br>
+        customer = str(input(&quot;Who would you like to search for? &quot;))<br>
+        customer = customer.split()<br>
+        customerLen = len(customer)<br>
+        # The highest number of names per person is three.<br>
+        pattern = &quot;&quot;<br>
+        <br>
+        if customerLen == 0:<br>
+        &nbsp;print(&quot;Please provide a customer name.&quot;)<br>
+        elif customerLen == 1:<br>
+        # Could be first name, middle name, last name, or title <br>
+        &nbsp;pattern = r&quot;{}&quot;.format(customer[0])<br>
+        elif customerLen == 2:<br>
+        # Could be a combination of two of: <br>
+        # first name, middle name, last name, or title<br>
+        &nbsp;pattern = r&quot;{}\s{}&quot;.format(customer[0], customer[1])<br>
+        elif customerLen == 3:<br>
+        # Customer's full name<br>
+        &nbsp;pattern = r&quot;{}\s{}\s{}&quot;.format(customer[0], customer[1], customer[2])<br>
+        <br>
+        for i in range(0,len(data)):<br>
+        &nbsp;if re.findall(pattern, data[i][&quot;Name&quot;]):<br>
+        # Returns first match<br>
+        &nbsp;&nbsp;print(data[i])<br>
+        &nbsp;&nbsp;break<br>
+        <!-- UPDATE -->
+    </code>
+    <br>
+    <h3>OUTPUT:</h3>
+        <code
+            style="background: black; border: 1px solid #ddd; border-left: 3px solid #96e01e; color: #96e01e; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;">
+            Who would you like to search for? Albert Austin
+            OrderedDict([('Name', 'Albert Austin'), ('Gender', 'male'), ('SSN', '694-64-4269'), ('Member Date', '27/4/2014'), ('Phone', '(986) 687-5815'), ('State', 'VA'), ('Zip', '49396'), ('Email', 'a.Austin@covap.com'), ('Credit Card', 'Discover Card'), ('Credit Card_Number', '6011xxxxxxxx8067'), ('Credit Card Exp', '01/24'), ('Favorite Radio Station', 'WCNA'), ('Purchases Past 30 Days', '1'), ('Spent Past 30 Days', '$784.89'), ('Purchases Past 6 Months', '3'), ('Spent Past 6 Months', '$2486.83'), ('Purchases Past 12 Months', '11'), ('Spent Past 12 Months', '$8694.17')])
+        <!-- UPDATE -->
+    </code>
+        <br>
+        <br>
+        <p style="text-align: left; font-weight: bold;">
+            Regards,
+            <!-- UPDATE -->
+        </p>
+        <p style="text-indent: 48px; font-weight: bold;">
+            Brad
+            <!-- UPDATE -->
+        </p>
+</body>

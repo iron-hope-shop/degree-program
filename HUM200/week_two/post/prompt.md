@@ -1,0 +1,7 @@
+# In your discussion post, describe what has been challenging about getting through the course thus far, and explain what has helped you overcome that challenge. If you have a question for the other students, feel free to include it as part of your response.
+
+Time management, comprehension, and responses have been challenging aspects of the course thus far.  Overcoming these challenges has been a learning experience in many ways.  I have learned that this course takes a lot more time than others; however, I stop and enjoy the little things as I peruse the textbook.  Procuring quality thoughts to serve in the textbook open-ended responses as well as the discussion responses is always a challenge to me.  Despite the difficulty, I enjoy learning about the humanities and look forward to becoming more cultured.
+
+The amount of reading required for this course is ungodly.  At the same time we have covered a lot of ground so time management and comprehension go hand-in-hand.  It has been a challenege balancing life while really absorbing the meaning of the content.  For instance, the music section.  I spent probably 30 minutes alone listening to the tunes.
+
+Coming up with stimulating original content for my peers to interact with is always challenging.  At first I was very reserved but I would say I have fully embraced it and I can get pretty candid.  What is your mindset when doing the response portion of the discussions?

@@ -1,0 +1,43 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+  <p style="text-align: left; font-weight: bold;">
+    Brad Jackson
+            <!-- UPDATE -->
+    <span style="float: right">
+      11/21/2021
+                  <!-- UPDATE -->
+    </span>
+    <br>
+    CS305
+            <!-- UPDATE -->
+    <br>
+    Journal: Week 4
+            <!-- UPDATE -->
+  </p>
+  <h1 style="text-align:center!important;">
+    Algorithm Ciphers
+            <!-- UPDATE -->
+  </h1>
+</head>
+<body style="text-align:justify;">
+  <p style="text-indent:48px;line-height:2">
+    We are looking for an algorithm cipher to be used to encrypt data at rest.  The best cipher in terms of security is AES 256 because the computational power (compute) required for it to be broken does not exist.  One reason not to choose the most secure cipher is due to the compute required to encrypt the data.  In our case we are encrypting data for long-term storage so this should not be an issue.  In a scenario where we had live data/data in transit it might not be efficient to use this particular algorithm cipher due to the time it takes to perform the encrypting function.
+            <!-- UPDATE -->
+  </p>
+  <p style="text-indent:48px;line-height:2">
+    Hash functions map an input to a unique output of a fixed length of bits, a digest.  This digest can be used to check the integrity of the encrypted data.  For example, some websites provide MD5 hashes for integrity check when downloading files from their website to make sure no tampering has occurred.  The bit levels (in the case of AES) of a cipher determine the number of 32-bit words, or columns, in the state.  In turn, this determines the length of the cipher key in bits (128, 192, or 256).
+            <!-- UPDATE -->
+  </p>
+  <p style="text-indent:48px;line-height:2">
+    Random numbers are used to improve the quality of the security of key generation.  Symmetric encryption uses one key to encrypt and decrypt data whereas asymmetric encryption uses two keys.  Symmetric keys are used in ciphers such as Blowfish, AES, RC4, DES, RC5, and RC6.  Asymmetric keys are used in web certificate management such as in a HTTPS where a public key is used to validate the integrity of a host.
+            <!-- UPDATE -->
+  </p>
+  <p style="text-indent:48px;line-height:2">
+    The history of cryptography continues to evolve.  As of yet, ciphers such as AES have not been broken but there is fear that quantum computing will render ciphers such as AES ineffective.  If this happens, it will require a new generation of security professional to rethink the way data is securely managed.
+            <!-- UPDATE -->
+  </p>
+</body>

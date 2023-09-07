@@ -1,0 +1,415 @@
+PWD /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.tex
+OUTPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.log
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amscls/amsart.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.aux
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.aux
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.aux
+OUTPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.aux
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+OUTPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.pdf
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig1.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig1.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig1.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig1.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig2.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig2.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig2.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig2.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig3.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig3.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig3.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig3.png
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig4.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig4.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig4.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig4.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig5.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig5.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig5.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig5.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig6.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig6.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig6.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig6.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig7.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig7.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig7.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig7.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig8.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig8.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig8.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig8.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig9.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig9.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig9.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig9.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig10.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig10.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig10.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig10.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig11.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig11.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig11.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig11.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig12.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig12.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig12.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig12.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig13.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig13.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig13.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig13.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig14.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig14.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig14.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig14.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig15.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig15.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig15.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig15.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1803.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1803.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1803.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1803.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1803.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1802.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1802.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1802.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1802.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/IMG_1802.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig16.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig16.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig16.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/M6-fig16.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/snhu_logo.png
+INPUT /Users/goldsmith/apps/school/snhu/MAT230/week_six/MAT 230 Module Six Problem Set Template/main.aux
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

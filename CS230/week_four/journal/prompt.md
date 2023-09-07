@@ -1,0 +1,15 @@
+# Client-Server Pattern: Discuss how the client-server pattern can be used to satisfy software requirements and efficiently solve a problem. Specifically, the web-based game application must be able to be run on multiple operating platforms.
+The client-server pattern can be used to satisfy software requirements and efficiently solve the problem of multiple target platforms. By using hypertext transfer protocol (HTTP) with a representational state transfer (REST) artictecture we are able to provide a server which can communicate with virtually any web browser as well as any other means that supports HTTP.
+
+# Server Side: You have developed the application from the server side. Discuss how the server side provides communication to the client side with REST API style.
+The server side provides communication to the client side by first establishing trust (via Basic Auth.).  Role-based access (RBAC) is also used to determine the permission level of the user.  When trust is established the client is able to make GET and POST requests (GET essentially is READ and POST is WRITE from common CRUD operations) to endpoints avaiable based on their role.  
+
+# Client Side: You wrote an application for multiple clients where the multiple environments can interact with the server. Discuss what is required of the developers so that the application on all three clients is able to be used on the website. Consider what next steps would entail to develop for the client side of the game application. For instance:
+# How would you add more users to the database?
+I actually just wrapped up a project for work that used Spring for a RESTful API.  To keep our services lean we kept the REST services stateless.  In order to have a stateful application arcitecture we needed an external database.  We were able to create a configuration within Spring to connect the REST services to an Azure SQL database using secrets.  The same prinicple would apply here, the user would access the REST API and, depending upon their role, they could perform CRUD operations against the database (which would have a dynamic table of current users).
+
+# What other features might you include in the game app?
+If we added an external database to make the game app stateful, we could also track user wins, losses, and keep a table of highscores.  We could also add customization options that may or may not be paid features.
+
+# What if The Gaming Room asked you to host the application on a fourth and fifth client? For example, on Xbox and PS4.
+If The Gaming Room asked us to host the application on a fourth and fifth client such as Xbox or PS4, we would have to create a client which invoked our REST service for those target platforms (the Draw It or Lose It client).  Once we ported that client to Xbox or PS4/PS5 the principle would be the same as any other client.

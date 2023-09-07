@@ -1,0 +1,16 @@
+- Summary
+  - Describe your unit testing approach for each of the three features.
+    - To what extent was your approach aligned to the software requirements? Support your claims with specific evidence.
+    - Defend the overall quality of your JUnit tests. In other words, how do you know your JUnit tests were effective based on the coverage percentage?
+  - Describe your experience writing the JUnit tests.
+    - How did you ensure that your code was technically sound? Cite specific lines of code from your tests to illustrate.
+    - How did you ensure that your code was efficient? Cite specific lines of code from your tests to illustrate.
+- Reflection
+  - Testing Techniques
+    - What were the software testing techniques that you employed in this project? Describe their characteristics using specific details.
+    - What are the other software testing techniques that you did not use for this project? Describe their characteristics using specific details.
+    - For each of the techniques you discussed, explain the practical uses and implications for different software development projects and situations.
+  - Mindset
+    - Assess the mindset that you adopted working on this project. In acting as a software tester, to what extent did you employ caution? Why was it important to appreciate the complexity and interrelationships of the code you were testing? Provide specific examples to illustrate your claims.
+    - Assess the ways you tried to limit bias in your review of the code. On the software developer side, can you imagine that bias would be a concern if you were responsible for testing your own code? Provide specific examples to illustrate your claims.
+    - Finally, evaluate the importance of being disciplined in your commitment to quality as a software engineering professional. Why is it important not to cut corners when it comes to writing or testing code? How do you plan to avoid technical debt as a practitioner in the field? Provide specific examples to illustrate your claims.

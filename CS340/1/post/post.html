@@ -1,0 +1,55 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            09/01/2022
+            <!-- UPDATE -->
+        </span>
+        <br>
+        CS340
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week One
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        Database Experience
+        <!-- UPDATE -->
+    </h1>
+</head>
+<body style="text-align:justify;">
+    <p>
+<div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">{</span>
+    <span style="color: #f92672">&quot;firstName&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;Brad&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;lastName&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;Jackson&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;level&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">28</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;currentJob&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;Engineer&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;currentLocation&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #e6db74">&quot;AR&quot;</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;married&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">,</span>
+    <span style="color: #f92672">&quot;hasChildren&quot;</span><span style="color: #f8f8f2">:</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">,</span>
+<span style="color: #f8f8f2">}</span>
+</pre></div>
+
+
+</p>
+<p style="text-indent:48px;line-height:2">
+    I use databases nearly every day.  Most of my experience is with AzureSQL using transact SQL; but, I have also used NoSQL databases.  My most used NoSQL database is probably CosmosDB.
+    <!-- UPDATE -->
+</p>
+</p>
+<p style="text-indent:48px;line-height:2">
+    My favorite IDE in general is VSCode (VSC) and I am a devout VSC'er.  I use it for everything except Android.  There are a lot of factors that add up to make it my favorite IDE of all time but the highlights are, customization, extensions, and integrations.  Examples of customization are enabling ligatures, linter settings, and so on.  I have replaced a lot of tools with extensions within VSC.  One such instance is Postman, there is a VSC extension called Thunder Client and it is like an inline Postman for VSC with collections and the whole shebang.  Super cool.  The integrated terminal is very handy especially with the builtin tabbing and splitting.  The automatic detection of lanuage is pretty common now in IDEs but VSC does an excellent job with it and recommending linters/extensions.  
+    <!-- UPDATE -->
+</p>
+</p>
+<p style="text-indent:48px;line-height:2">
+    Examples of databases that I use in my daily work life are AzureSQL and CosmosDB.  I have had successes with creating tables, altering columns, and other simple administrative tasks.  I have had some close calls but I have not lost significant amounts of data because of redundancy and sometimes dumb luck.  For instance, one time I almost wiped one of the tables from my dev instance of AzureSQL by running the wrong parameterized query in Python script... luckily the password had expired for the service account so it failed to run the query.  I realized my mistake as I was updating the secrets and PHEW good thing it failed otherwise that would have been a little extra work for me.  Query optimization has been on my mind lately regarding CosmosDB and document database queries.  My team has been struggling with slowness in pagination.  The solution, in my mind, is to only fetch the primary key (uuid4 string in this case) and use offsets but I have not had a chance to play with it yet.
+    <!-- UPDATE -->
+</p>
+</body>

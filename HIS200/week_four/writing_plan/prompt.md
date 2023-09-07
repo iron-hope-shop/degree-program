@@ -1,0 +1,3 @@
+# Consider the topic you have chosen for your historical analysis essay. Who would be most interested in reading about this topic? How might you alter your writing style or the information you present to cater to this audience? Keeping your audience in mind, what will the message of your essay be?
+
+# Add your answers to firstname_lastname.Writing_Plan, under the heading Audience and Message. Then save this document locally on your computer. You will be asked to submit it at the end of Theme: Communicating Historical Ideas, Learning Block 4-4.

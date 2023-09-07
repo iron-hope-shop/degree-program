@@ -1,0 +1,6 @@
+In your readings this week, you have spent some time exploring different emerging trends in artificial intelligence. In this discussion, you will be asked to evaluate research on an emerging trend of your choice and discuss your findings with your classmates. Before writing your initial post, select a milestone release, research paper, or publication from OpenAI or DeepMind, or a comparable research paper from the Shapiro Library.
+
+For your initial post, write a response of 2–4 paragraphs total. Be sure to answer each of the following prompts. Your answer must include a reference to the paper you selected, as well as any other resources used, properly cited in APA format.
+
+- Provide a brief (one paragraph or less) summary of the paper you read. What emerging trend was covered? How is it related to other topics discussed in this course?
+- Evaluate the emerging trend. What are the potential benefits of this emerging trend? What types of problems is it designed to solve? What are its limitations? What are its ethical and societal implications?

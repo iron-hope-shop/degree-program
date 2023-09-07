@@ -1,0 +1,5 @@
+# Choose a factor that would impact speed, velocity, or acceleration in a scenario presented by your peer.
+Nice to virtually meet you!  A factor that would impact the speed, velocity, or acceleration of your drive would be a duck.  Imagine you are driving down the road and suddenly a mommy duck waddles across the road followed by her ducklings.  Hesitantly, you decelerate, decreasing your speed and the magnitude of your velocity.  Your wife would frown upon ruining perfectly good ducks so naturally you slow down and come to a stop.  The speed and magnitude of your velocity reaches zero.   The ducks pass.  You both make it to work late but the world is a few ducks the richer.
+
+Safe travels to you and your wife.
+# Describe the impact that the factor has on the speed, velocity, and acceleration.

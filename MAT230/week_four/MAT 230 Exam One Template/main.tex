@@ -1,0 +1,335 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+%\documentclass{amsart}
+%\usepackage{txfonts}
+%\documentclass[12pt,oneside]{article}
+\documentclass{amsart}
+\usepackage{graphicx}
+\usepackage{enumitem}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{Exercise}
+\newtheorem{ex}[thm]{Exercise}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\theoremstyle{rule}
+\newtheorem{rul}[thm]{Rule}
+
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\bB(X)}
+\newcommand{\A}{\mathcal{A}}
+% ----------------------------------------------------------------
+
+% define some simple, commonly-used commands
+\newcommand{\eps}{\varepsilon}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\dint}{\displaystyle\int}
+
+\newcommand{\pdr}[2]{\dfrac{\partial{#1}}{\partial{#2}}}
+\newcommand{\pdrr}[2]{\dfrac{\partial^2{#1}}{\partial{#2}^2}}
+\newcommand{\pdrt}[3]{\dfrac{\partial^2{#1}}{\partial{#2}{\partial{#3}}}}
+\newcommand{\dr}[2]{\dfrac{d{#1}}{d{#2}}}
+\newcommand{\aver}[1]{\langle {#1} \rangle}
+\newcommand{\Baver}[1]{\Big\langle {#1} \Big\rangle}
+
+\newcommand{\bzero}{\mathbf 0}
+\newcommand{\bGamma}{\mbox{\boldmath{$\Gamma$}}}
+\newcommand{\btheta}{\boldsymbol \theta}
+\newcommand{\bchi}{\mbox{\boldmath{$\chi$}}}
+\newcommand{\bnu}{\boldsymbol \nu}
+\newcommand{\bmu}{\boldsymbol \mu}
+\newcommand{\brho}{\mbox{\boldmath{$\rho$}}}
+\newcommand{\bxi}{\boldsymbol \xi}
+\newcommand{\bnabla}{\boldsymbol \nabla}
+\newcommand{\bOm}{\boldsymbol \Omega}
+\newcommand{\blambda}{\boldsymbol \lambda}
+\newcommand{\bsigma}{\boldsymbol \sigma}
+
+\newcommand{\bbR}{\mathbb R}
+\newcommand{\bbC}{\mathbb C}
+\newcommand{\bbQ}{\mathbb Q}
+\newcommand{\bbN}{\mathbb N}
+\newcommand{\bbZ}{\mathbb Z}
+
+\newcommand{\ba}{\mathbf a} \newcommand{\bb}{\mathbf b}
+\newcommand{\bc}{\mathbf c} \newcommand{\bd}{\mathbf d}
+\newcommand{\be}{\mathbf e} \newcommand{\bff}{\mathbf f}
+\newcommand{\bg}{\mathbf g} \newcommand{\bh}{\mathbf h}
+\newcommand{\bi}{\mathbf i} \newcommand{\bj}{\mathbf j}
+\newcommand{\bk}{\mathbf k} \newcommand{\bl}{\mathbf l}
+\newcommand{\bm}{\mathbf m} \newcommand{\bn}{\mathbf n}
+\newcommand{\bo}{\mathbf o} \newcommand{\bp}{\mathbf p}
+\newcommand{\bq}{\mathbf q} \newcommand{\br}{\mathbf r}
+\newcommand{\bs}{\mathbf s} \newcommand{\bt}{\mathbf t}
+\newcommand{\bu}{\mathbf u} \newcommand{\bv}{\mathbf v}
+\newcommand{\bw}{\mathbf w} \newcommand{\bx}{\mathbf x}
+\newcommand{\by}{\mathbf y} \newcommand{\bz}{\mathbf z}
+\newcommand{\bA}{\mathbf A} \newcommand{\bB}{\mathbf B}
+\newcommand{\bC}{\mathbf C} \newcommand{\bD}{\mathbf D}
+\newcommand{\bE}{\mathbf E} \newcommand{\bF}{\mathbf F}
+\newcommand{\bG}{\mathbf G} \newcommand{\bH}{\mathbf H}
+\newcommand{\bI}{\mathbf I} \newcommand{\bJ}{\mathbf J}
+\newcommand{\bK}{\mathbf K} \newcommand{\bL}{\mathbf L}
+\newcommand{\bM}{\mathbf M} \newcommand{\bN}{\mathbf N}
+\newcommand{\bO}{\mathbf O} \newcommand{\bP}{\mathbf P}
+\newcommand{\bQ}{\mathbf Q} \newcommand{\bR}{\mathbf R}
+\newcommand{\bS}{\mathbf S} \newcommand{\bT}{\mathbf T}
+\newcommand{\bU}{\mathbf U} \newcommand{\bV}{\mathbf V}
+\newcommand{\bW}{\mathbf W} \newcommand{\bX}{\mathbf X}
+\newcommand{\bY}{\mathbf Y} \newcommand{\bZ}{\mathbf Z}
+
+\newcommand{\cA}{\mathcal A} \newcommand{\cB}{\mathcal B}
+\newcommand{\cC}{\mathcal C} \newcommand{\cD}{\mathcal D}
+\newcommand{\cE}{\mathcal E} \newcommand{\cF}{\mathcal F}
+\newcommand{\cG}{\mathcal G} \newcommand{\cH}{\mathcal H}
+\newcommand{\cI}{\mathcal I} \newcommand{\cJ}{\mathcal J}
+\newcommand{\cK}{\mathcal K} \newcommand{\cL}{\mathcal L}
+\newcommand{\cM}{\mathcal M} \newcommand{\cN}{\mathcal N}
+\newcommand{\cO}{\mathcal O} \newcommand{\cP}{\mathcal P}
+\newcommand{\cQ}{\mathcal Q} \newcommand{\cR}{\mathcal R}
+\newcommand{\cS}{\mathcal S} \newcommand{\cT}{\mathcal T}
+\newcommand{\cU}{\mathcal U} \newcommand{\cV}{\mathcal V}
+\newcommand{\cW}{\mathcal W} \newcommand{\cX}{\mathcal X}
+\newcommand{\cY}{\mathcal Y} \newcommand{\cZ}{\mathcal Z}
+
+
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%\documentclass[12pt,oneside]{article}
+
+\usepackage{pdfpages}
+%--------------
+\usepackage{enumitem}
+%-------------Tasks
+%\usepackage{tasks} %\begin{tasks} \item \end{tasks}
+%\bfseries Horizontal list: a = alphabetical \normalfont
+%\begin{tasks}[counter-format = {tsk[a].},label-offset = {0.6em},label-format = {\bfseries}](6)
+%\task One
+%\task Two
+%\task Three
+%\task Four
+%\task Five
+%\task Six
+%\task Seven
+%\task Eight
+%\task Nine
+%\task Ten
+%\end{tasks}
+%\vglue5mm
+%\bfseries Horizontal list: A = Alphabetical \normalfont
+%\begin{tasks}[counter-format = {(tsk[A])},label-offset = {0.8em},label-format = {\bfseries}](3)
+%\task One
+%\task Two
+%\task Three
+%\task Four
+%\task Five
+%\task Six
+%\task Seven
+%\task Eight
+%\task Nine
+%\task Ten
+%\end{tasks}
+
+
+
+%___________________________
+\usepackage[margin=2.5cm]{geometry}
+
+\geometry{hmargin=3cm,vmargin=2cm}
+\usepackage{tikz}
+\def\width{18}
+\def\hauteur{13}
+
+
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%Start%%%%%%%%%%%%%Start%%%%%%%%%%%Start%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%%%%%%%%%%Start%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\chead{\includegraphics[scale=.1]{snhu_logo.png}}
+\begin{document}
+
+\title{\sf MAT 230 Exam One}%
+
+
+\begin{center}
+\includegraphics[scale=.1]{snhu_logo.png}
+\end{center}
+
+%\thm{bbjh}
+\maketitle
+This document is proprietary to Southern New Hampshire University. It and the problems within may not be posted on any non-SNHU website.\\\\\\\\
+\begin{center}
+%Enter your name below this line:
+Brad Jackson
+\end{center}
+
+\begin{center}
+\rule{\textwidth}{0.4pt}
+\end{center}
+\newpage
+\section*{}
+\section*{}
+Directions: Type your solutions into this document and be sure to show all steps for arriving at your solution. Just giving a final number may not receive full credit.
+\\
+\section*{Problem 1}
+\begin{enumerate}[label=(\alph*)]
+\item The domain for all variables in the expressions below is the set of real numbers. {\bf Determine whether each statement is true or false.}
+\begin{enumerate}[label=(\roman*)]
+  \item $\forall\, x\; \exists \,y\;(x\,+\,y\;\geq \;0)$
+\\\\
+  %Enter your answer below this comment line.  
+% This is false because x could be a negative with a greater absolute value than y and thus the sum would be less than zero.
+This is true because for any given $x$ there would exist a $y$ where y is a positive real number with an absolute value equal to or greater to that of $x$ therefore the sum would be greater than or equal to zero.
+\\\\
+  \item $\exists \, x\; \forall \,y\;(x\,\cdot\,y\;>\; 0)$
+   \\\\
+  %Enter your answer below this comment line.  
+This is false because if $y=0$ any resulting product will be equal to zero.
+\\\\
+\end{enumerate}
+
+\item {\bf Translate each of the following English statements into logical expressions.}
+\begin{enumerate}[label=(\roman*)]
+  \item There are two numbers whose ratio is less than $1$.
+   \\\\
+  %Enter your answer below this comment line.
+$\exists \,x\; \exists \,y\; ((x/y < 1) \lor (y/x < 1))$
+\\\\
+  \item The reciprocal of every positive number is also positive.
+   \\\\
+  %Enter your answer below this comment line.  
+Let $x$ be a positive number.\\
+$\forall \,x\; (\,|\,x/1\,|\, > 0)$
+\\\\
+  \end{enumerate}
+  \end{enumerate}
+  \newpage
+  \section*{Problem 2}
+  Prove the following using the specified technique:
+  \begin{enumerate}[label=(\alph*)]
+    \item Let $x$ and $y$ be two real numbers such that $x + y$ is rational. Prove by contrapositive that if $x$ is irrational, then $x - y$ is irrational.
+          \\\\
+%Enter your answer below this comment line.  
+Let $x$ be an irrational number and $y$ be a real number:\\
+$\sqrt{8} - 1 = \sqrt{8} - 1$\\
+
+\item Prove by contradiction that for any positive two real numbers, $x$ and $y$,
+if $x\cdot y\, \leq \,50$, then either $x < 8$ or $y < 8$.
+\\\\
+%Enter your answer below this comment line.  
+$Proof.$\\\\
+Suppose that there are are two positive real numbers, $x$ and $y$, such that\\
+$x \cdot y \leq 50\,$ and both $x < 8$, and $y < 8$\\\\
+Let $x = 7$ and $y = 1$\\
+$7 \cdot 1 \leq 50$
+
+\\\\
+  \end{enumerate}
+  \newpage
+  \section*{Problem 3}
+  Let $n\, \geq \, 1$, $x$ be a real number, and $x\, \geq\,-1$. {\bf Prove the following statement using mathematical induction.}
+  \[(1\,+\,x)^n\;\geq\;1\,+\,nx\]
+
+\begin{proof}
+\renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+%Enter your answer below this comment line.  
+$Proof.$ \textbf{Theorem:}\\
+For $n\, \geq \, 1$ and $x\, \geq\,-1$,\\\\
+$(1\,+\,x)^n\;\geq\;1\,+\,nx$\\\\
+Proof by induction on $n$\\\\
+\textbf{Base case $n=1$:}\\\\
+$(1\,+\,x)^1\;\geq\;1\,+\,(1)\,x$\\\\
+$1\,+\,x\;\geq\;1\,+\,x$\\\\
+$0\;\geq\;0$\\\\
+\textbf{Inductive step:}\\
+We will show that for any integer $k\geq1$, $(1\,+\,x)^{k+1}\;\geq\;1\,+\,(k+1)x$\\\\
+$(1\,+\,x)^k\;\geq\;1\,+\,kx$\\
+$(1\,+\,x)(1\,+\,x)^{k}\;\geq\;(1\,+\,x)(1\,+\,kx)$\\
+$(1\,+\,x)^{k+1}\;\geq\;1\,+\,(k+1)x+\,kx^2$\\
+$1+(k\,+\,1)x+\,kx^2\;>\;1\,+\,(k+1)x\,\,\,\,\,\,\,\,(kx^2\,>\,0)$\\
+$\Rightarrow (1\,+\,x)^{k+1}\;\geq\;1\,+\,(k+1)x$\\
+\end{proof}
+
+
+\newpage
+  \section*{Problem 4}
+  {\bf Solve the following problems:}
+  \begin{enumerate}[label=(\alph*)]
+    \item How many ways can a store manager arrange a group of 1 team leader and 3 team workers from his 25 employees?
+\\\\
+  %Enter your answer below this comment line.
+  $25!/(3!(25−3)!) = 25!/(3!*22!) = 2300$
+\\\\
+    \item A state’s license plate has 7 characters. Each character can be a capital letter $(A-Z)$, or a non-zero digit $(1-9)$. How many license plates start with 3 capital letters and end with 4 digits with no letter or digit repeated?
+\\\\
+  %Enter your answer below this comment line.
+  $26*25*24*(28!/28!)*9*8*7*6 = 47174400$
+\\\\
+    \item How many binary strings of length 5 have at least 2 adjacent bits that are the same (``$00$'' or ``$11$'') somewhere in the string?
+\\\\
+  %Enter your answer below this comment line.
+  $(2^5)-2 = 30$
+
+  \end{enumerate}
+\newpage
+  \section*{Problem 5}
+  A class with n kids lines up for recess. The order in which the kids line up is random with each ordering being equally likely. There are two kids in the class named Betty and Mary. The use of the word ``$or$'' in the description of the events, should be interpreted as the inclusive or. That is ``$A \;or\; B$'' means that $A$ is true, $B$ is true, or both $A$ and $B$ are true.\\\\
+  What is the probability that Betty is first in line or Mary is last in line as a function of $n$? Simplify your final expression as much as possible and include an explanation of how you calculated this probability.
+\\\\
+  %Enter your answer below this comment line.
+
+$P(B\cup M) = P(B) + P(M) - P(B\cap M)$\\
+$= P(B) + P(M) - (P(B)\cdot P(M/B))$\\
+
+This shows the probability that $B$, Betty is first in line or $M$, Mary is last in line.  Above shows the intersection of the probability of Betty being first and Mary being last.\\
+
+  \newpage
+  \section*{Problem 6}
+The general manager, marketing director, and 3 other employees of Company $A$ are hosting a visit by the vice president and 2 other employees of Company $B$. The eight people line up in a random order to take a photo. Every way of lining up the people is equally likely.
+\begin{enumerate}[label=(\alph*)]
+  \item What is the probability that the general manager is next to the vice president?
+\\\\
+  %Enter your answer below this comment line.  
+  $14/8! = 0.00035$
+\\\\
+  \item What is the probability that the marketing director is in the leftmost position?
+\\\\
+  %Enter your answer below this comment line.
+  $7!/8! = 0.125$
+\\\\
+  \item Determine whether the two events are independent. Prove your answer by showing that one of the conditions for independence is either true or false.
+ \\\\
+  %Enter your answer below this comment line.  
+  $P(A\cap B) \neq P(A) \cdot P(B)$\\\\
+  $Proof.$\\
+  $12/8! \neq 14/8! \cdot 1/8$\\
+  $0.000347 \neq 0.000043$
+  
+\\\\
+\end{enumerate}
+\end{document}
+

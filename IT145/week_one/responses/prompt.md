@@ -1,0 +1,6 @@
+# What did you find interesting or relatable in your peers’ posts?
+I also started my development adventure with Python! Learning python is truly a great way to learn programming because of its ability to simplify complex concepts that carry on to other programming languages. Java scary.  If you don't understand something from the text maybe try looking up how to do it in Python to give you a better understanding. Be confident even when moving to a new language because the odds are asounding that someone else has encountered the same problem as you. Maybe 90% of your time spent trying to figure out a problem early-on in a new language is Googling. You will probably feel a lot more confident when you've used Java more and are down to maybe 5-10% Googling.  No shame!
+
+# Based on what you have written in your post, consider sharing a tip that you have learned for managing your time in online courses.
+
+# Do you have similar questions? If so, let your peers know so your instructor can support you and your classmates.

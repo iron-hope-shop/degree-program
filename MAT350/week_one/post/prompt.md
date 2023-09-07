@@ -1,0 +1,7 @@
+# Introduce yourself and briefly state which program you are in.
+My name is Brad (aka Mr. Needful).  I live in Northwest Arkansas and work for Wal-Mart's InfoSec division as a Systems Engineer.  I am enrolled in the B.S. in Computer Science program.  A challenge that I anticipate is getting back into the flow of doing mathematics on a daily basis.  I guess I kind of already do this but it has been a while since I did any formal mathematics.  I am not going to lie, I am enrolled in my program because the opportunity presented itself and it will help me achieve higher within my company.  My comfort level with linear algebra and programming is fairly high since I deal with logic and code all day.  I am pretty confident in my ability to write functional code in any language; however, I probably need a refresher on the maths.
+# Describe a challenge or challenges you anticipate in this course.
+# Name one event or person that influenced you to pursue a degree in your field.
+# What is your comfort level with linear algebra or programming?
+# Which skills are you most confident in? Which skills need the most improvement?
+# What strategies do you plan to use to manage your time and complete assignments in this course?

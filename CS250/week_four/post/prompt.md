@@ -1,0 +1,8 @@
+# What is the “Two Pizza Rule” and how did it help Amazon?
+The Two Pizza Rule means that the size of the team should reflect how many people could eat two pizzas.
+
+# From the alignment matrix chart, choose one of the 12 agile principles and explain how Amazon applies that principle in their work.
+From the alignment matrix chart I choose minimize wasted effort, duplication, and resources.  The way that Amazon applies that principle in their work is a multiple-pronged approach.  The first example of this is obviously the adoption and application of the agile methodology in their architecture.  The second is the use of lean, cloud-based, services.  The third is the "Two Pizza Rule" which is a reference to the optimal size of a team.
+
+# Choose a second agile principle from the alignment matrix chart. How would you apply this principle to your SNHU Travel project?
+We have already applied another of the principles in this list to our SNHU Travel project and that is: Effective cross-functional collaboration with a clear intent is supported.  We have taken the first step of gathering customer-based data within the scope of the application.  Furthermore, we are recieving more details per milestone with regard to the need of our customers.  We could take our experience one step further and pledge to use the travel application for a week to plan our next vacation.  This would be a Kaizen-like approach that I think would result in a lot more insight than staring at the source code/localhost for extended periods of time.

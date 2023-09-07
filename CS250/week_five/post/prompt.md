@@ -1,0 +1,8 @@
+# Choose one estimation practice (story points, planning poker, and so on) from the module readings and review its pros and cons.
+
+Story points are an estimation practice which has both pros and cons.  One of the pros is that you can block a specific amount of time out of your work week for a specific task.  You usually base story points off of the Fibonacci sequence.  One of the downsides is that there can be a lot fo speculation on how many story points encompass a certain amount of time.  For instance, two companies might use the Fibonacci sequence but 3 story points could mean something drastically different between the two.  Another downside is that your story point estimate is just that-- an estimate. You could create a story for "researching xyz" and find it over as soon as it began.  From my experience it is beneficial for you to under-estimate the story points required for tasks you are unsure about.
+
+# Consider a project from work or school that you estimated poorly before. Briefly describe the project, then identify one or two agile estimation practices that could have helped you improve the project estimate.
+
+
+I have had a few experiences incorrectly estimating story points in my current role.  The theories in this book are great but unfortunately I find myself in a sort of dev-ops environment so they do not follow the agile method with prescision.  This means that I am on my own in terms of story estimation nearly all of the time.  It would be helpful to approach another team to help me.  Using the planning poker method I could probably get a better estimate for those tricky-to-estimate stories.

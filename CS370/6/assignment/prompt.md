@@ -1,0 +1,14 @@
+# CS 370 Module Six Assignment Guidelines and Rubric
+## Overview
+In Module Five, you learned about Q-learning and its variants. This module introduces you to advanced reinforcement learning concepts such as actor-critic methods. Using the cartpole problem you solved in Module Five, you will explore how the same problem could be solved using policy-based approaches and actor-critic methods. Then you will write a short paper discussing your findings. This will help you gain a deeper understanding of advanced reinforcement learning concepts and how they can be applied to computing problems.  
+
+## Prompt
+In the Module Five assignment, you experimented with the [cartpole](https://towardsdatascience.com/cartpole-introduction-to-reinforcement-learning-ed0eb5b58288) problem using a Deep Q-Network (DQN), which is a value-based approach. There is also a policy-based approach that works better for continuous environments. Read through one such approach here: [Deriving Policy Gradients and Implementing REINFORCE](https://medium.com/@thechrisyoon/deriving-policy-gradients-and-implementing-reinforce-f887949bd63). Actor-critic models represent another variation of reinforcement learning by taking the best of both value- and policy-based approaches. One such approach, A2C, is described here: [Understanding Actor Critic Methods and A2C](https://towardsdatascience.com/understanding-actor-critic-methods-931b97b6df3f). Be sure to pay special attention to the code included in both of these readings.  
+
+Note: As with some of your previous readings, there are some complicated math equations referenced in these articles. Understanding the details of the equations is not essential. Instead, pay special attention to the included code. Although not required for the purposes of this assignment, you are encouraged to try out the code for these solutions in a Jupyter Notebook in your Virtual Lab (Apporto).  
+
+After reviewing the articles, you must write a short paper explaining your findings. You must include references and in-text citations using APA format. Specifically, in your paper you must address each of the following:  
+- Explain how the cartpole problem can be solved using the REINFORCE algorithm. Consider using pseudocode, UML, diagrams, or flowcharts to help illustrate your solution.
+- Explain how the cartpole problem can be solved using the A2C algorithm. Consider using pseudocode, UML, diagrams, or flowcharts to help illustrate your solution.
+- Explain how policy gradient approaches differ from value-based approaches, such as Q-learning.
+- Explain how actor-critic approaches differ from value- and policy-based approaches.

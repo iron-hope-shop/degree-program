@@ -1,0 +1,85 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            Thursday, September 26, 2019
+            <!-- UPDATE -->
+        </span>
+        <br>
+        IT140
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week Four
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        A-dict-did To Python
+        <!-- UPDATE -->
+    </h1>
+</head>
+
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        In day-to-day programming, I use both lists and dictionaries. Lists and dictionaries in python each have their
+        own use cases. For example, list comprehensions are very useful when writing concise code. Meanwhile,
+        dictionaries are useful when handling JSON blocks. Both lists and dictionaries might be useful when creating a
+        block chain. In terms of efficiency, I would evaluate that according to the task.
+        <!-- UPDATE -->
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        An example of a use case where dictionaries would be more efficient than lists would be inventory. Dictionaries
+        are generally faster to read from than lists because of the unordered way they are stored. A simple list or a
+        lists of lists could be used to manage inventory; however, this would be much slower. Below is a small Python
+        test I ran to prove that dictionaries surpass the limits of lists in this context (executed one million times
+        each):
+        <!-- UPDATE -->
+    </p>
+    <code style="background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;">
+        import timeit
+def testDict():
+    d = {
+    'eggs': 540,
+    'bread': 74,
+    'toilet paper': 999
+    }
+    dv = d.get('bread')
+    return dv
+
+def testList():
+    l = [
+    'eggs', 540,
+    'bread', 74,
+    'toiler paper', 999
+    ]
+    i = l.index('bread') + 1
+    lv = l[i]
+    return lv
+
+if __name__ == '__main__':
+    print(f'Dictionary speed: {timeit.timeit("testDict()", setup="from __main__ import testDict", number=1000000):.5f} seconds.')
+    print(f'List speed: {timeit.timeit("testList()", setup="from __main__ import testList", number=1000000):.5f} seconds.')
+
+> python3 .\dvl.py
+Dictionary speed: 0.46175 seconds.
+List speed: 0.60943 seconds.
+    </code>
+</body>

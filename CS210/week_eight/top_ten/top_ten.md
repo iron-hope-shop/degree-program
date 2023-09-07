@@ -1,0 +1,12 @@
+- Avoid Harm
+- Respect privacy
+- Honor confidentiality
+- Maintain high standards of professional competence, conduct, and ethical practice.
+- Design and implement systems that are robustly and usably secure
+Strive to achieve high quality in both the processes and products of professional work
+- Create opportunities for members of the organization or group to grow as professionals.
+- Foster public awareness and understanding of computing, related technologies, and their consequences.
+- Improve readability and thereby the understanding and the maintainability and general quality of code produced
+- Accept and provide appropriate professional review
+
+I chose "Avoid Harm" as my most important to-do item because we need to maintain a level of mindfulness in our work.  "Respect Privacy" is my second item because I think compliance is one of the foremost things we need to consider when creating a new product.  "Honor Confidentiality" involves withholding information from the general public because its release couild have negative ethical consequences.  This is also a compliance issue which should be held in highest regard.  "Set High Standards" is important if you want people to take your work seriously.  "Value Security" is integral when creating any application and more so when creating an application which houses sensitive data.  "Quality Matters" is an item which is only so low on the list due to ethical requirements.  It is important to set a standard for your team especially if you plan to be a mentor.  "Have and Be a Mentor" promotes self-growth and the growth of your colleagues.  It is important to always grow and adapt in our field. "Spread the Good Word" involves educating customers and even people in your personal life about ethical computing best practices and risks.  "Make Comments" is in ragrd to code.  This is important because when you eventually pass along ownership of a project to a junior developer, they WILL have questions.  The better your comments, the better their initial understanding.  Finally, "Code Reviews" are important to reflect on your work with a peer.  Often this leads to minor changes which provide and even greater understanding of the end product.

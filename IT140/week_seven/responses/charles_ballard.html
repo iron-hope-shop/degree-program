@@ -1,0 +1,55 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            Tuesday, October 15, 2019
+            <!-- UPDATE -->
+        </span>
+    </p>
+</head>
+
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        Is it possible to get the customer data cleaned up and functional in regards to member date? Currently the date formats are wildly varied. Since all of our business is domestic to the US, let's just go with the standard MM/DD/YYYY format to make things easy. As it stands, our rewards system is not correctly sending out member rewards because it can't utilize the information.
+        <!-- UPDATE -->
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        In my opinion, it would take much longer and be inaccurate to use regex for this task.  If someone manages to do it, please share.  Below I have parsed the member dates using dateutil and converted them all to UTC so we have the same relative timezone.  The for loop prints out the head of data (first 5).
+        <!-- UPDATE -->
+    </p>
+    <h3>customer_regex.py:</h3>
+    <code style="background: black; border: 1px solid #ddd; border-left: 3px solid #96e01e; color: #96e01e; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;">
+        #!/Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+<br />        from dateutil.parser import parse
+<br />        from pytz import timezone
+<br />        import csv<br /> data = []
+<br /><br />        
+        with open('customerData.csv') as csvfile:
+<br />&nbsp; &nbsp; reader = csv.DictReader(csvfile)
+<br />&nbsp; &nbsp; for row in reader:
+                data.append(row)
+<br /><br />        
+        for i in range(0,6):
+<br />&nbsp; &nbsp; parsed = parse(data[i]["Member Date"], fuzzy=True)
+<br />&nbsp; &nbsp; parsed = parsed.replace(tzinfo=timezone('UTC'))
+<br />&nbsp; &nbsp; parsed = parsed.strftime("%m/%d/%Y") # could be %Y/%m/%d
+<br />&nbsp; &nbsp; print(f"Row {i}: {parsed}")
+    </code>
+    <br>
+    <h3>output:</h3>
+    <code style="background: black; border: 1px solid #ddd; border-left: 3px solid #96e01e; color: #96e01e; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word;">
+        $ ./customer_regex.py 
+        Row 0: 2016/08/01
+        Row 1: 2015/10/17
+        Row 2: 2016/06/03
+        Row 3: 2012/05/02
+        Row 4: 2006/02/04
+        Row 5: 2016/05/31
+    </code>
+</body>

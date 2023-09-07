@@ -1,0 +1,1 @@
+# As you respond to your peers, pick one example of something being described (e.g., a song, TV show, book, or movie) that you are unfamiliar with. What kind of explanation could have helped you (the audience) understand its impact? Why?

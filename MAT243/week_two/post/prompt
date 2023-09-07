@@ -1,0 +1,21 @@
+In this discussion, you will apply the central limit theorem and use principles of the Normal distribution to calculate probabilities. You will demonstrate two key parts of the central limit theorem:
+
+The distribution of sample means is approximately Normally distributed (bell-shaped) as the sample size increases and we repeatedly draw these samples, regardless of the shape of the population distribution from which the samples are drawn.
+The average of all sample means is equal to the population mean. In practice, the average of all sample means will closely approximate the population mean.
+You will generate a population data set representing total precipitation (TPCP) in tenths of a millimeter using Python’s numpy module. The distribution of this data set will be skewed. This data set will be unique to each student, and therefore the answers will be unique as well. Run Step 1 in the Python script to generate your unique population data.
+
+In your initial post, address the following items:
+
+In the Python script, you created a histogram for the dataset generated in Step 1. Check to make sure that this data distribution is skewed and included in your attachment. See Step 2 in the Python script.
+What is the mean of the TPCP population data? See Step 3 in the Python script.
+In the Python script, you selected a random sample with replacement, of size 50 (note that this is a sufficiently large sample), from the TPCP population. What is the mean of your random sample? Does this sample mean closely approximate the TPCP population mean? See Step 4 in the Python script.
+You also selected 1,000 random samples of size 50 and calculated the mean of each sample. Then you stored those means into a dataframe. Check to make sure the output of this step is in your attachment. See Step 5 in the Python script.
+Review the plotted data distribution for these 1,000 means. Does this approximate a Normal distribution? Does this confirm the first part of the central limit theorem? Why or why not? See Step 6 in the Python script.
+What is the “grand” mean and standard deviation of these 1,000 means? Does the grand mean closely approximate (on a relative basis) the mean of the original distribution? Does this confirm the second part of the central limit theorem? Why or why not? See Step 7 in the Python script.
+
+
+
+
+
+
+

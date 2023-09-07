@@ -1,0 +1,19 @@
+Is their population distribution skewed? Is their distribution of 1,000 sample means approximately Normally distributed? Does this confirm the first part of the central limit theorem? Why or why not?
+
+1 Your population is indeed skewed to the right and your distribution of 1,000 appears normally distributed (represents bell curve).  This confirms the first part of the central limit theorem (CLT) because our output fits the criteria defined in the CLT.  All samples are identical in size and we still end up with a normal distribution.
+
+Since my data and everyone else's appears to be skewed it is an easy assumption to make; however, it is hard to confirm if your data is skewed, as we do not have the median value for the original population distribution or a visual representation.  It would be most helpful if you included the exported charts in future posts, it makes it a lot easier to respond to your posts.
+
+The bell curve is the standard for comparison in this case so if the 1,000 sample distribution is similar then it would indicate that the data is normally distributed.  This would confirm the first part of the central limit theorem (CLT) because our output fits the criteria defined in the CLT.  All samples are identical in size and we still end up with a normal distribution.
+
+Does their grand mean closely approximate their population mean? Does this confirm the second part of the central limit theorem? Why or why not?
+
+1 Your grand mean closely approximates your population, which confirms the second part of the CLT where it is stated that the variance of each sample will closely resemble the original the population divided by each sample size.
+
+Your grand mean is indeed very close to your original population mean; furthermore, your analysis is very fitting.  The majority of the samples approximating the original data is the foundation of the second part of the CLT.
+
+Based on this discussion activity, what have you learned about the central limit theorem?
+
+1 Prior to this activity I was not familiar with the central limit theorem.  I have learned what the CLT is and its significance in statistics and probability theory in measuring the distribution of a sample.
+
+I have learned a lot about the fundamentals of sample statistics during this activity, the keystone of which is the central limit theorem.  It allows us to measure the normality of a distribution by comparing it to a gold standard.  After trying the Juypter notebook for myself, I read through other peoples' discussions and it is helpful to see insights such as yours to fill in the gaps of my knowledge.

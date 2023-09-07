@@ -1,0 +1,22 @@
+Python is used by thousands of people to do things from testing microchips at Intel, to powering Instagram, to building video games with the PyGame library. Although you have just been introduced to Python, it's time to think about its use. For your main post, respond to the following statement question: Is Python a programming language or a scripting language? Post of summary of your response including examples to support your conclusions.
+
+After your main post, respond to two classmates posts and review the examples used in support of their choice. Pose additional comments/questions to advance the discussion.
+
+Programming and scripting languages are closely tied together.  Programming languages are typically low-level languages meant for architecting systems while scripting languages are used to link systems together and maintain them.  It is a heated topic of debate but I have changed my opinion on the subject.  Python is built with a low-level language, C.  It is interpreted, rather than compiled.  Python is a powerful, high-level, scripting language.  I say this begrudgingly because I am familiar with production applications that are built on top of Python.
+
+John Ousterhout divides programming and scripting languages by stating:
+"System programming languages were designed for building data structures and algorithms from scratch, starting from the most primitive computer elements such as words of memory. In contrast, scripting languages are designed for gluing: They assume the existence of a set of powerful components and are intended primarily for connecting components"
+
+Guido Van Rossum is the creator of Python.  In the foreword of the first O'Reilly Python book he refers to Python as "the new scripting language I had been thinking about lately" (Rossum, 1996).  This is concrete evidence that Python was initially created as a scripting language.  Despite 
+"not [being] the fastest running scripting language," Python is the foundation for web applications such as Flask, machine learning, and batch jobs.  The flexibility of Python is what makes it hard to justifiably call it either a programming or a scripting language.
+
+On the contrast, Kopec states that "Python is one of the most popular programming languages in the world" (Kopec, 2018).  While Python is popular, the claim that it is a programming language is bold.  Kopec's opinion is strongly stated whereas, if we continue reading Rossum's manifesto, Rossum is divided.  He boasts that "Python is remarkably free from many of the hang-ups of conventional programming languages," unaware that he is claiming that Python lives in a dual state (Rossum, 1996).
+
+Python has ascended since its inception.  It was originally cast as a scripting language; however, it has evolved into a pro-script-gramming language.  It is useful for patching together applications as well as rote server maintenance.
+
+Kopec, D. (2018). Classic computer science problems in python (Vol. 4). Shelter Island, NY: Manning.
+
+Ousterhout, J. (1998). Scripting: higher level programming for the 21st Century. Computer, 31(3), 23–30. doi: 10.1109/2.660187
+
+Rossum, G. V. (1996). Foreword for "Programming Python" (1st ed.). Retrieved from https://legacy.python.org/doc/essays/foreword/
+

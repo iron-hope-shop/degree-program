@@ -1,0 +1,122 @@
+<p style="text-align: left; font-weight: bold;">Brad Jackson <span style="float: right;"> DATE </span> <br />COURSE <br />Discussion Board: Week NUMBER</p>
+<h1 style="text-align: center!important;">Title</h1>
+<p style="text-indent: 48px; line-height: 2;">Paragraph_template</p>
+<h3>Step 1: Preparing the dataset</h3>
+<div style="background: #272822; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #75715e;">### STEP 1</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">pandas</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">pd</span>
+ <span style="color: #f8f8f2;">temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">[</span><span style="color: #ae81ff;">66</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">64</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">43</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">55</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">45</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">61</span><span style="color: #f8f8f2;">]</span>
+ <span style="color: #f8f8f2;">temperatures_df</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">DataFrame(temperatures,</span> <span style="color: #f8f8f2;">columns</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #f8f8f2;">print(temperatures_df)</span>
+</pre>
+</div>
+<p></p>
+<h3>Step 1: Output</h3>
+<div style="background: #000000; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #888888;">$ python3 step_one.py</span>
+    <span style="color: #888888;">     temperature</span>
+    <span style="color: #888888;"> 0            66</span>
+    <span style="color: #888888;"> 1            57</span>
+    <span style="color: #888888;"> 2            64</span>
+    <span style="color: #888888;"> 3            54</span>
+    <span style="color: #888888;"> 4            43</span>
+    <span style="color: #888888;"> 5            48</span>
+    <span style="color: #888888;"> 6            54</span>
+    <span style="color: #888888;"> 7            55</span>
+    <span style="color: #888888;"> 8            48</span>
+    <span style="color: #888888;"> 9            45</span>
+    <span style="color: #888888;"> 10           57</span>
+    <span style="color: #888888;"> 11           54</span>
+    <span style="color: #888888;"> 12           54</span>
+    <span style="color: #888888;"> 13           61</span>
+    </pre>
+</div>
+<p></p>
+<h3>Step 2: Calculating descriptive statistics</h3>
+<div style="background: #272822; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"> <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">pandas</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">pd</span>
+ <span style="color: #75715e;">### FROM STEP 1</span>
+ <span style="color: #f8f8f2;">temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">[</span><span style="color: #ae81ff;">66</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">64</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">43</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">55</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">45</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">61</span><span style="color: #f8f8f2;">]</span>
+ <span style="color: #f8f8f2;">temperatures_df</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">DataFrame(temperatures,</span> <span style="color: #f8f8f2;">columns</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #75715e;">### STEP 2</span>
+ <span style="color: #f8f8f2;">mean</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">mean()</span>
+ <span style="color: #f8f8f2;">print(</span><span style="color: #e6db74;">"Mean="</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">round(mean,</span> <span style="color: #ae81ff;">2</span><span style="color: #f8f8f2;">))</span>
+ <span style="color: #f8f8f2;">median</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">median()</span>
+ <span style="color: #f8f8f2;">print(</span><span style="color: #e6db74;">"Median="</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">round(median,</span> <span style="color: #ae81ff;">2</span><span style="color: #f8f8f2;">))</span>
+ <span style="color: #f8f8f2;">variance</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">var()</span>
+ <span style="color: #f8f8f2;">print(</span><span style="color: #e6db74;">"Variance="</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">round(variance,</span> <span style="color: #ae81ff;">2</span><span style="color: #f8f8f2;">))</span>
+ <span style="color: #f8f8f2;">stdeviation</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">std()</span>
+ <span style="color: #f8f8f2;">print(</span><span style="color: #e6db74;">"Standard Deviation="</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">round(stdeviation,</span> <span style="color: #ae81ff;">2</span><span style="color: #f8f8f2;">))</span>
+ <span style="color: #f8f8f2;">statistics</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">describe()</span>
+ <span style="color: #f8f8f2;">print(</span><span style="color: #e6db74;">"</span><span style="color: #ae81ff;">\n</span><span style="color: #e6db74;">Describe method"</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">print(statistics)</span>
+</pre>
+</div>
+<p></p>
+<h3>Step 2: Output</h3>
+<div style="background: #000000; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"><span style="color: #888888;"> $ python3 step_two.py </span>
+<span style="color: #888888;"> Mean= 54.29</span>
+<span style="color: #888888;"> Median= 54.0</span>
+<span style="color: #888888;"> Variance= 44.99</span>
+<span style="color: #888888;"> Standard Deviation= 6.71</span>
+<span style="color: #888888;"> </span>
+<span style="color: #888888;"> Describe method</span>
+<span style="color: #888888;"> count    14.000000</span>
+<span style="color: #888888;"> mean     54.285714</span>
+<span style="color: #888888;"> std       6.707385</span>
+<span style="color: #888888;"> min      43.000000</span>
+<span style="color: #888888;"> 25%      49.500000</span>
+<span style="color: #888888;"> 50%      54.000000</span>
+<span style="color: #888888;"> 75%      57.000000</span>
+<span style="color: #888888;"> max      66.000000</span>
+<span style="color: #888888;"> Name: temperature, dtype: float64</span>
+</pre>
+</div>
+<p></p>
+<h3>Step 3: Line graph to display trend</h3>
+<div style="background: #272822; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"> <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">matplotlib.pyplot</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">plt</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">pandas</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">pd</span>
+ <span style="color: #75715e;">### FROM STEP 1</span>
+ <span style="color: #f8f8f2;">temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">[</span><span style="color: #ae81ff;">66</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">64</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">43</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">55</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">45</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">61</span><span style="color: #f8f8f2;">]</span>
+ <span style="color: #f8f8f2;">temperatures_df</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">DataFrame(temperatures,</span> <span style="color: #f8f8f2;">columns</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #75715e;">### STEP 3</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">plot(temperatures_df[</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">title(</span><span style="color: #e6db74;">"Line plot of temperature data"</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">fontsize</span><span style="color: #f92672;">=</span><span style="color: #ae81ff;">20</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">xlabel(</span><span style="color: #e6db74;">"day"</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">ylabel(</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">show()</span>
+</pre>
+</div>
+<p></p>
+<h3>Step 3: Output</h3>
+<p><img loading="lazy" src="/d2l/lp/files/temp/009w6cjf3pujacffnfmfbz8nwyawt0gs2wd00177255151.png;step_three.png/View" alt="Step 3: Output" title="Step 3: Output" width="644" height="484" />&nbsp;</p>
+<h3>Step 4: Side-by-side boxplots to compare distributions</h3>
+<div style="background: #272822; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+<pre style="margin: 0; line-height: 125%;"> <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">matplotlib.pyplot</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">plt</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">pandas</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">pd</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">seaborn</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">sns</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">numpy</span> <span style="color: #66d9ef;">as</span> <span style="color: #f8f8f2;">np</span>
+ <span style="color: #f92672;">import</span> <span style="color: #f8f8f2;">random</span>
+ <span style="color: #75715e;">### STEP 1</span>
+ <span style="color: #f8f8f2;">temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">[</span><span style="color: #ae81ff;">66</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">64</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">43</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">55</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">48</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">45</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">57</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">54</span><span style="color: #f8f8f2;">,</span> <span style="color: #ae81ff;">61</span><span style="color: #f8f8f2;">]</span>
+ <span style="color: #f8f8f2;">temperatures_df</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">DataFrame(temperatures,</span> <span style="color: #f8f8f2;">columns</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #75715e;">### STEP 4</span>
+ <span style="color: #f8f8f2;">mean</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">random</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">randint(temperatures_df[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">min(),temperatures_df[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">max())</span>
+ <span style="color: #f8f8f2;">std_deviation</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">random</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">randint(round(temperatures_df[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">std(),</span><span style="color: #ae81ff;">0</span><span style="color: #f8f8f2;">),round(</span><span style="color: #ae81ff;">2</span><span style="color: #f92672;">*</span><span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">]</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">std(),</span><span style="color: #ae81ff;">0</span><span style="color: #f8f8f2;">))</span>
+ <span style="color: #f8f8f2;">zion_temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">np</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">random</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">normal(mean,</span> <span style="color: #f8f8f2;">std_deviation,</span> <span style="color: #ae81ff;">25</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">zion_temperatures</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">DataFrame(zion_temperatures,</span> <span style="color: #f8f8f2;">columns</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">[</span><span style="color: #e6db74;">'temperature'</span><span style="color: #f8f8f2;">])</span>
+ <span style="color: #f8f8f2;">temperatures_df[</span><span style="color: #e6db74;">'id'</span><span style="color: #f8f8f2;">]</span> <span style="color: #f92672;">=</span> <span style="color: #e6db74;">'my_data'</span>
+ <span style="color: #f8f8f2;">zion_temperatures[</span><span style="color: #e6db74;">'id'</span><span style="color: #f8f8f2;">]</span> <span style="color: #f92672;">=</span> <span style="color: #e6db74;">'zion_data'</span>
+ <span style="color: #f8f8f2;">both_temp_df</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">pd</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">concat((temperatures_df,</span> <span style="color: #f8f8f2;">zion_temperatures))</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">title(</span><span style="color: #e6db74;">'Boxplot for comparison'</span><span style="color: #f8f8f2;">,</span> <span style="color: #f8f8f2;">fontsize</span><span style="color: #f92672;">=</span><span style="color: #ae81ff;">20</span><span style="color: #f8f8f2;">)</span>
+ <span style="color: #f8f8f2;">fig</span> <span style="color: #f92672;">=</span> <span style="color: #f8f8f2;">sns</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">boxplot(x</span><span style="color: #f92672;">=</span><span style="color: #e6db74;">"id"</span><span style="color: #f8f8f2;">,y</span><span style="color: #f92672;">=</span><span style="color: #e6db74;">"temperature"</span><span style="color: #f8f8f2;">,data</span><span style="color: #f92672;">=</span><span style="color: #f8f8f2;">both_temp_df)</span>
+ <span style="color: #f8f8f2;">plt</span><span style="color: #f92672;">.</span><span style="color: #f8f8f2;">show()</span>
+</pre>
+</div>
+<p></p>
+<h3>Step 4: Output</h3>
+<p><img loading="lazy" src="/d2l/lp/files/temp/009hmw9im8bsaj0pw2v3nkm6elf16gtpxf500177255151.png;step_four.png/View" alt="Step 4: Output" title="Step 4: Output" width="644" height="484" /></p>
+<p></p>
+<p></p>

@@ -1,0 +1,7 @@
+# Share the topic you have chosen for the projects in this course with your classmates. Briefly describe the historical event you have chosen to analyze as well as the research question you will attempt to answer in your essay.
+
+For my research topic I have chosen Prohibition in the United States.  The specific event I chose was the 1920 prohibition of alcohol which lasted until 1933.  I will pose the question, "Did the 1920s Prohibition cause more damage to society than it fixed?"  As you probably know, organized crime rates increased and a large number of United States citizens continued to consume alcohol in speakeasies.
+
+# Consider your webtext reading about Québécois immigration. If you were researching this topic, what else would you like to know about the experience of the Québécois immigrants in Lowell, Massachusetts in 1870 that might not be covered in this piece?
+
+If I were researching the topic of Québécois immigration I would research deeper into the long-term effects of Canadian influence in the area.  The text says that the Québécois formed "Little Canadas."  Assmiliation personally makes me think that the culture disappeared into our own.  Is this true?  Or did we adopt certain aspects of their culture that remain in New England until this day?

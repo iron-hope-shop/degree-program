@@ -1,0 +1,9 @@
+Reflection - Applying Your Experience
+Making mistakes when you learn to write code is common. It is part of learning. What is important is developing the skill of learning how to understand
+your errors and then fix them (debugging). For this part of your final project, you will respond to the following:
+
+A. Reflecting on your experience with this activity, explain the importance of knowing how and when to use and modify custom functions, inputs
+(parameters) within functions, and functions to return the correct output. Support your response with examples from the activity of the types of
+errors and your method for fixing them.
+
+Using functions is something we have only just begun doing in our projects.  By using functions, we no longer have to worry about variable scope since we can just pass variables as inputs to functions.  I was not sure what to add on to my script for its final form, so I added a class for ATM.  The class creates an instance of ATM from which we can call class methods.  I also added a transaction history that prints.  One thing that I have corrected was the return of my functions.  Previously, none of my functons returned a value and just printed the activity.  I added returns to all of the class methods, including atm.startCli(), which returns a exit success code.

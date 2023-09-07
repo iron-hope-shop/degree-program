@@ -1,0 +1,18 @@
+Assume the position of a manager of an online retailer. Pose a question to your IT expert about a task you would like to do with the customer data files. Provide a brief explanation (two to three sentences) describing why this task might be relevant. Examples of tasks you may pose include the following:
+
+Correct data errors
+Normalize the format of data
+Search for certain customers based on a business need
+Identify trends based on frequency of the customers
+
+
+
+
+
+
+
+
+In your responses to your peers:
+Provide the regex code that would be required to meet the task presented.
+Describe the relevance of the task: Were regular expressions the best or only way to approach the task? What other data or tasks could be used to increase effectiveness or better achieve the goal presented?
+

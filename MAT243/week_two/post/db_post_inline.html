@@ -1,0 +1,119 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            01/16/2020
+            <!-- UPDATE -->
+        </span>
+        <br>
+        MAT 243
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week Two
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        The Central Limit Theorem
+        <!-- UPDATE -->
+    </h1>
+</head>
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        My histogram generated in Step 1 of the notebook is shown below.  Visually we can determine that the data is skewed to the right, with the concentration of our data points being more toward the left.  In our readings for week one it was outlined that skew is determined by finding the difference between the mean and median of the distribution.  The mean of my population data is 496.53 and the median is 408.00.  In order to demonstrate the skew of my data, I modified the script for step 3 to find the skew and report the direction of the skew.  As you can see below, the distribution has a positive skew (88.53) which means it is skewed to the right.
+        <!-- UPDATE -->
+    </p>
+    <h4>Input (Step 3)</h4>
+    <!-- INPUT --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+   10
+   11
+   12
+   13
+   14
+   15
+   16
+   17
+   18</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e"># You can use the &quot;mean&quot; method of a pandas dataframe.</span>
+   <span style="color: #f8f8f2">pop_mean</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">tpcp_df[</span><span style="color: #e6db74">&#39;TPCP&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">mean()</span>
+   <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Population mean =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(pop_mean,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+   
+   <span style="color: #75715e"># Finding and printing the median of the dataframe</span>
+   <span style="color: #f8f8f2">pop_median</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">tpcp_df[</span><span style="color: #e6db74">&#39;TPCP&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">median()</span>
+   <span style="color: #f8f8f2">print(f</span><span style="color: #e6db74">&quot;Population median = {pop_median:.2f}</span><span style="color: #ae81ff">\n</span><span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">)</span>
+   
+   <span style="color: #75715e"># Finding the skew (mean - median)</span>
+   <span style="color: #f8f8f2">pop_skew</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">pop_mean</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">pop_median</span>
+   <span style="color: #f8f8f2">print(f</span><span style="color: #e6db74">&quot;The skew is {pop_skew:.2f}&quot;</span><span style="color: #f8f8f2">)</span>
+   
+   <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">pop_skew</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+       <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;The skew is positive.  The distribution is skewed to the right.&quot;</span><span style="color: #f8f8f2">)</span>
+   <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">pop_skew</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+       <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;The skew is negative.  The distribution is skewed to the left.&quot;</span><span style="color: #f8f8f2">)</span>
+   <span style="color: #66d9ef">elif</span> <span style="color: #f8f8f2">pop_skew</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">:</span>
+       <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;The skew is 0.  No skew for you.&quot;</span><span style="color: #f8f8f2">)</span>
+   </pre></td></tr></table></div>
+<h4>Output (Step 3):</h4>
+<!-- Output -->
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Population mean = 496.53
+Population median = 408.00
+
+The skew is 88.53
+The skew is positive.  The distribution is skewed to the right.
+    </pre></div>
+    
+    <p style="text-indent:48px;line-height:2">
+        From step four, the mean of my random sample of 50 data points is 545.76.  It is not close to the population mean; therefore, I would not use it to approximate values.
+        <!-- UPDATE -->
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Section 4.4 in our zyBook defines the Central Limit Theorem (CLT).  The CLT is the basis for assuming averages and totals follow the normal distribution and underlies many of the tests and results used in data analysis. The CLT states that as the sample size drawn from the population with distribution <i>x</i> becomes larger, the sampling distribution of the means approaches that of a normal distribution.  The distribution of 1000 sample means approximates a normal distribution as it resembles a bell curve.  The resmblence to the bell curve means that its traits will be comparable to a normal distribution where the majority of values are encompassed in the within one standard deviation, ninety-five percent within the second, and so on.
+        <!-- UPDATE -->
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        In step seven we determine the "grand" mean of the distribution of 1,000 sample means.  My grand mean is 496.67, extremely close to my original population of 496.53.  I believe this confirms the second part of the CLT; however, I think this exercise relied too much on chance.  After saving my notebook I was proven wrong, as the thousand samples were indeed derived from the data in step three.  I can say with confidence that the grand mean is an accurate measurement of our data and proves the CLT.
+        <!-- UPDATE -->
+    </p>
+<h4>Input (Step 7)</h4>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+   10
+   11</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #75715e"># calculate mean of the 1,000 sample means (this is called the grand mean or mean of the means).</span>
+   <span style="color: #f8f8f2">mean1000</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">means_df[</span><span style="color: #e6db74">&#39;means&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">mean()</span>
+   <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Grand Mean (Mean of 1000 sample means) =&quot;</span><span style="color: #f8f8f2">,round(mean1000,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+   
+   <span style="color: #75715e"># calculate standard deviation of the 1,000 sample means.</span>
+   <span style="color: #f8f8f2">std1000</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">means_df[</span><span style="color: #e6db74">&#39;means&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">std()</span>
+   <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Std Deviation of 1000 sample means =&quot;</span><span style="color: #f8f8f2">,round(std1000,</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">))</span>
+   
+   <span style="color: #75715e"># print the probability that a specific mean is 450 or less for a Normal distribution with mean and standard deviation of 1,000 sample means.</span>
+   <span style="color: #f8f8f2">prob_450_less_or_equal</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">st</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">norm</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">cdf(</span><span style="color: #ae81ff">450</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">mean1000,</span> <span style="color: #f8f8f2">std1000)</span>
+   <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;Probability that a specific mean is 450 or less =&quot;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">round(prob_450_less_or_equal,</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">))</span>
+   </pre></td></tr></table></div>
+   
+<h4>Output (Step 7)</h4>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Grand Mean (Mean of 1000 sample means) = 496.67
+Std Deviation of 1000 sample means = 50.05
+Probability that a specific mean is 450 or less = 0.1755
+    </pre></div>
+    
+</body>
