@@ -2,10 +2,10 @@
 HTML templates for Blackboard posts/replies
 OH, and it should be compliant with APA 6 formatting.  For example, the references sections are wrapped with CSS that will give them hanging indents.  You'll still need to make sure the titles of articles are in italics. If not, let me know.
 ## POST (You can add more paragraph, references, etc.)
-![POST](/img/db_post.PNG)
+![POST](/_IMAGES/db_post.PNG)
 
 ## REPLY (you can add more quotes, paragraphs, references, etc.)
-![REPLY](/img/db_reply.PNG)
+![REPLY](/_IMAGES/db_reply.PNG)
 
 
 ## Purpose
@@ -19,16 +19,16 @@ In the root directory of this project, you will find two HTML files.  * db_post.
 Once you have chosen a template, I recommend editing it in notepad or another text editor.
 
 ### Add the HTML to the post/reply
-![Creation](/img/tutorial_1.png)
+![Creation](/_IMAGES/tutorial_1.png)
 
 To add the template to your post/reply, click the HTML button in the toolbar.
 
 
-![Edit](/img/tutorial_2.png)
+![Edit](/_IMAGES/tutorial_2.png)
 
 If you have no already edited the template, this would probably be the second easiest place to do so (the easiest being in an external editor).
 
 
-![Update](/img/tutorial_3.png)
+![Update](/_IMAGES/tutorial_3.png)
 
 Now click the update button and vee-oh-lah.  If you are finished, submit it; otherwise, you can click preview to check out how it will look when it is submitted.
