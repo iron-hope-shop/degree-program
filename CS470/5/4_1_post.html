@@ -1,0 +1,74 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            June 6, 2024
+            <!-- UPDATE -->
+        </span>
+        <br>
+        CS470
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week 5
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        Mongo versus Dynamo
+        <!-- UPDATE -->
+    </h1>
+</head>
+
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        Which NoSQL database reigns supreme: MongoDB or DynamoDB? MongoDB, started by former DoubleClick engineers,
+        offers a flexible document model (MongoDB, n.d.). It lets users change schemas easily and use cloud-managed MongoDB Atlas.
+        DynamoDB, made by Amazon, is known for high performance and scaling but has a 400KB item size limit (MongoDB, n.d.).
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Unlike DynamoDB's basic key-value queries, MongoDB supports complex
+        searches, including geospatial ones. MongoDB allows documents up to 16MB (MongoDB, n.d.). MongoDB has many index types like
+        hash, unique, and text. DynamoDB offers fewer types, impacting flexibility and speed. MongoDB Atlas gives
+        detailed performance metrics, unlike DynamoDB's limited insights (Rocketset, 2020).
+
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        MongoDB validates data within the database itself. In contrast, DynamoDB
+        relies on external application layer checks. MongoDB's pricing is based on resources used, while DynamoDB
+        charges based on throughput, leading to potential cost differences. Choosing between MongoDB and DynamoDB
+        involves weighing their unique qualities (Debrie, 2020). Consider each's data handling, query support, and cost. This decision
+        impacts your application's foundation significantly.
+
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        In the worlds of MongoDB and DynamoDB, the single-table design is a big
+        win. DynamoDB shines by using a single table, making things simpler and scaling easily (Rocketset, 2020). This approach is
+        recommended by AWS because it cuts down on extra work and helps manage resources better. MongoDB, on the other
+        hand, uses multiple tables, which can be more complex and harder to scale. The single-table design is a
+        game-changer for DynamoDB, making it a top choice for many developers.</p>
+
+    <h4 style="text-align: center !important;">
+        References
+        <!-- UPDATE IF NEEDED -->
+    </h4>
+
+    <p style="line-height: 2; padding-left: 48px; text-indent: -48px; line-height: 2;">
+        MongoDB. (n.d.). <i>MongoDB vs. DynamoDB</i>. <a
+            href="https://www.mongodb.com/resources/compare/mongodb-dynamodb">https://www.mongodb.com/resources/compare/mongodb-dynamodb</a>
+    </p>
+    <p style="line-height: 2; padding-left: 48px; text-indent: -48px; line-height: 2;">
+        Rockset. (2020, June 11). <i>MongoDB vs DynamoDB Head-to-Head: Which Should You Choose?</i>. <a
+            href="https://rockset.com/blog/mongodb-vs-dynamodb-head-to-head-which-should-you-choose/">https://rockset.com/blog/mongodb-vs-dynamodb-head-to-head-which-should-you-choose/</a>
+    </p>
+    <p style="line-height: 2; padding-left: 48px; text-indent: -48px; line-height: 2;">
+        Debrie, A. (2020, August 10). <i>A Guide to DynamoDB Single Table Design</i>. <a
+            href="https://www.alexdebrie.com/posts/dynamodb-single-table/">https://www.alexdebrie.com/posts/dynamodb-single-table/</a>
+    </p>
+
+
+</body>

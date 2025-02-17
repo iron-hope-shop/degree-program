@@ -1,0 +1,17 @@
+# CS 330 Module Six Milestone Guidelines and Rubric
+## Overview
+This week you will be continuing to work on the 3D scene you already began to build, based on the 2D image you selected. Now it is time to incorporate lighting to create a more polished scene that includes all the necessary elements that will comprise your finalized world.
+
+## Prompt
+You will complete your work in Visual Studio, being sure to work from the project file you already created in a previous milestone. This file already has the libraries set up correctly and contains the 3D object you built, the camera navigation you applied, and the texture you added. All of these components will be necessary for you to add to this week.
+
+Specifically, you must address the following rubric criteria:
+
+- Apply light to a 3D scene. Add a light source of any type and color of your choosing, being sure to select options that make sense with the world you are creating. Your objects need to be made clearly visible by how the light source is positioned in the scene. Incorporate a secondary light source if it is necessary to fully display the scene; nothing should be in complete shadow. Keep the Phong lighting model in mind as you work. It will also be useful to think about directional lights, point lights, and spotlights to determine what would be an appropriate inclusion for your scene. (Hint: Review the Light Casters section of this week’s reading for additional support).
+- Apply shaders that reflect light off a plane. Adding shaders to the texture on the plane in your scene will enable you to reflect light off its surface. Note that it will be important to add texture to this object, if you have not done so already, so you can complete the lighting process.
+- Apply shaders that display the texture of a complex object. Working with the object you created from two or more 3D shapes, apply the appropriate shader to each shape that comprises the object overall. It is not expected that you will be able to reflect light from these shapes, owing both to their complexity and the shaders we are working with. However, the overall display should still be aesthetically pleasing, even if it is not completely true to life in its accuracy of appearance.
+- Create code that follows a logical flow without syntax errors. The code you create has to be executable and all the code that is included needs to be reached by the execution. Note that not everything should be written in a single function and your work should be well-modularized.
+- Apply coding best practices in your creations. Pay particular attention to the way you format and comment your code. Program code should be easy to read and follow industry standard code formatting practices, such as indentation and spacing. Commenting best practices should be in place to ensure the code is briefly and clearly explained using descriptive comments.
+
+## What to Submit
+Submit a completed ZIP folder with all of your code, which may include one or multiple CPP files along with Visual Studio project files. Also make sure the ZIP folder includes an EXE file, because without this your code will not be able to run. Checking for the EXE can be used as a quick reference on the functionality of your code before you submit.

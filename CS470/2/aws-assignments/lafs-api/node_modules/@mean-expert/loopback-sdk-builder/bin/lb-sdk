@@ -1,0 +1,199 @@
+#!/usr/bin/env node
+/**
+ * @module lb-sdk
+ * @description
+ * @license MTI
+ * 
+ * This CLI Tool loads client sdk generators for the selected library
+ * currently the only support is for Angular2 but drivers can be
+ * selected in order to work in different environments like nativescript
+ * and angular unicersal.
+ */
+var path = require('path');
+var semver = require('semver');
+var optimist = require('optimist');
+var generator = require('../index');
+var fs = require('extfs');
+var chalk = require('chalk');
+/**
+ * CLI Options Description
+ */
+var argv = optimist
+  .usage('\n******************************************* LoopBack SDK Builder 2.0 *******************************************\n' +
+  '\nGenerate Client SDK for your LoopBack Application.' +
+  '\nUsage:' +
+  '\n ./node_modules/.bin/lb-sdk server/server app/shared/sdk -d [ng2web | ng2native | ng2universal] -i [enabled | disabled] -v [enabled | strict | disabled]')
+  .describe('l', 'Client\'s library (angular, react, vuejs <todo> ...)')
+  .describe('d', 'Platform specific drivers (ng2web, ng2native, ng2universal, react-web)')
+  .describe('i', 'Enable PubSub, IO and FireLoop functionality')
+  .describe('n', 'Enable NGRX functionality (enabled | orm) EXPERIMENTAL FEATURE')
+  .describe('w', 'Automatically wipe SDK Directory')
+  .describe('v', 'Add default values in models')
+  .describe('f', 'Generate only FireLoop SDK + Auth Services')
+  .describe('q', 'quiet mode - no console output (forces -w)')
+  .describe('t', 'Enable Typescript default true ( React Only )')
+  .default('l', 'angular2')
+  .default('d', 'ng2web')
+  .default('i', 'enabled')
+  .default('w', 'disabled')
+  .default('v', 'disabled')
+  .default('f', 'disabled')
+  .default('q', false)
+  .default('t', true)
+  .alias({ u: 'url', m: 'module-name', l: 'library', i: 'io', n: 'ngrx', d: 'driver', w: 'wipe', v: 'default-values', f: 'fireloop-only', q: 'quiet', t: 'typescript' })
+  .demand(1)
+  .argv;
+/**
+ * Splash ACII Art
+ */
+
+if (!argv['q']) {
+  console.log(chalk.green('\n\n=========================================================================================='));
+  console.log(chalk.green('*    __                  ___           __     _______  __ __  ___       _ __   __        *'));
+  console.log(chalk.green('*   / /  ___  ___  ___  / _ )___ _____/ /__  / __/ _ \\/ //_/ / _ )__ __(_) /__/ /__ ____ *'));
+  console.log(chalk.green('*  / /__/ _ \\/ _ \\/ _ \\/ _  / _ `/ __/  \'_/ _\\ \\/ // / ,<   / _  / // / / / _  / -_) __/ *'));
+  console.log(chalk.green('* /____/\\___/\\___/ .__/____/\\_,_/\\__/_/\\_\\ /___/____/_/|_| /____/\\_,_/_/_/\\_,_/\\__/_/V2  *'));
+  console.log(chalk.green('*                 /_/                                                                    *'));
+  console.log(chalk.green('*                                                                                        *'));
+  console.log(chalk.green('*========================================================================================*'));
+  console.log(chalk.green('*                                                                                        *'));
+  console.log(chalk.green('*                       Developed & Maintained by Jonathan Casarrubias                   *'));
+  console.log(chalk.green('*       MEAN Expert · http://mean.expert · http://github.com/mean-expert-official        *'));
+  console.log(chalk.green('*                                                                                        *'));
+  console.log(chalk.green('*                                      CONTRIBUTORS                                      *'));
+  console.log(chalk.green('*                         João Ribeiro <http://jonnybgod.ghost.io>                       *'));
+  console.log(chalk.green('*                      Nikolay Matiushenkov <https://github.com/mnvx>                    *'));
+  console.log(chalk.green('*                         Sylvain Dumont <https://www.weboaks.com>                       *'));
+  console.log(chalk.green('*                        Yonggang Luo <https://github.com/lygstate>                      *'));
+  console.log(chalk.green('*                       Chris Tunbridge <https://github.com/Destreyf>                    *'));
+  console.log(chalk.green('*                       Miguel Serrano <https://github.com/Serranom4>                    *'));
+  console.log(chalk.green('*                         Julien Ledun <https://github.com/jledun>                       *'));
+  console.log(chalk.green('*                           Paul Robinson <http://nextfaze.com>                          *'));
+  console.log(chalk.green('*                         Corentin Hatte <https://github.com/viki53>                     *'));
+  console.log(chalk.green('*                      Fabian Scheidt <https://github.com/fabianscheidt>                 *'));
+  console.log(chalk.green('*                    Michał Frączkiewicz <https://github.com/bonaventoora>               *'));
+  console.log(chalk.green('*                                                                                        *'));
+  console.log(chalk.green('*                                 ORIGINALLY FORKED FROM                                 *'));
+  console.log(chalk.green('*                      Miroslav Bajtos\' <miroslav@strongloop.com>                        *'));
+  console.log(chalk.green('*                   https://github.com/strongloop/loopback-sdk-angular                   *'));
+  console.log(chalk.green('*                                                                                        *'));
+  console.log(chalk.green('=========================================================================================='));
+  
+  console.log('\n\THE MAGIC IS ABOUT TO HAPPEN ...\n\n');
+}
+
+/**
+ * Set Reference For Main Options
+ */
+var appFile = path.resolve(argv._[0]);
+/**
+ * Load and Boot LoopBack Application
+ */
+var app = require(appFile);
+// Default Values
+var context = {
+  app: app,
+  framework: argv['l'] || 'angular2',
+  moduleName: argv['module-name'] || 'sdk',
+  apiUrl: argv['url'] || app.get('restApiRoot') || '/api',
+  outputFolder: argv._[1],
+  isIo: argv['i'] || 'disabled',
+  isNgrx: argv['n'] || 'disabled',
+  driver: argv['d'] || 'ng2web',
+  wipe: argv['w'] || 'disabled',
+  defaultValue: argv['v'] || 'disabled',
+  fireloopOnly: argv['f'] || 'disabled',
+  quiet: argv['q'] || false,
+  isTyped: argv['t'] == 'false' ? false : true
+};
+
+if (context.quiet) {
+  context.wipe = 'enabled';
+}
+
+app.once('booted', verifyPath);
+
+function verifyPath() {
+  if (fs.isEmptySync(context.outputFolder)) {
+    runGenerator();
+  } else {
+
+    if (context.wipe === 'enabled') {
+    
+      if (!context.quiet) {
+        console.log(chalk.yellow('WARNING: The targeted SDK Directory is not empty but the "-w" flag is enabled. Removing contents.\n\n'));
+      }
+      
+      runGenerator();
+      
+    } else {
+      const readline = require('readline');
+      const rl = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+      });
+  
+      rl.question(chalk.yellow('WARNING: The targeted SDK Directory is not empty, do you want to erase its content? (Y/n) \n\n'), (answer) => {
+        switch (answer) {
+          case 'No':
+          case 'no':
+          case 'N':
+          case 'n':
+          case 'nop':
+          case 'nope':
+          case 'na':
+            console.log(chalk.red('The LoopBack SDK Builder was unable to complete the operation. Finishing process right now.\n\n'));
+            break;
+          default:
+            runGenerator();
+        }
+        rl.close();
+      });
+    }
+  }
+}
+
+/**
+ * Generator Logic
+ */
+function runGenerator() {
+  // Load Selected Generator
+
+  if (!context.quiet) {
+    console.info('Loading Framework %s', context.framework);
+    console.info('Generating %j for the API endpoint %j', context.moduleName, context.apiUrl);
+  }
+  //try {
+  generator[context.framework](context);
+
+  if (!context.quiet) {
+    console.info('\n\nEnjoy!!!');
+  }
+  
+  //} catch (err) {
+  //  throw new Error(err);
+  //}
+  // The app.js scaffolded by `slc lb project` loads strong-agent module that
+  // used to have a bug where it prevented the application from exiting.
+  // To work around that issue, we are explicitly exiting here.
+  //
+  // The exit is deferred to the next tick in order to prevent the Node bug:
+  // https://github.com/joyent/node/issues/3584
+  process.nextTick(function () {
+    process.exit();
+  });
+}
+//--- helpers ---//
+function assertLoopBackVersion() {
+  var Module = require('module');
+  // Load the 'loopback' module in the context of the app.js file,
+  // usually from node_modules/loopback of the project of app.js
+  var loopback = Module._load('loopback', Module._cache[appFile]);
+  if (semver.lt(loopback.version, '1.6.0')) {
+    console.error(
+      '\nThe code generator does not support applications based\n' +
+      'on LoopBack versions older than 1.6.0. Please upgrade your\n' +
+      'project to a recent version of LoopBack and run this tool again.\n');
+    process.exit(1);
+  }
+}

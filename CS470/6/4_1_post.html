@@ -1,0 +1,45 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            June 13, 2024
+            <!-- UPDATE -->
+        </span>
+        <br>
+        CS470
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week 6
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        IAM Roles and Policies
+        <!-- UPDATE -->
+    </h1>
+</head>
+
+<body style="text-align:justify;">
+    <p style="text-indent:48px;line-height:2">
+        IAM roles and policies are essential for securing access to AWS resources. IAM roles act as identities for
+        services and users, granting them temporary security credentials. These roles can be linked to IAM policies,
+        which are JSON documents outlining what actions are allowed or denied. By creating unique IAM roles and policies
+        for each service, you can implement least privilege and reduce the risk of unauthorized access.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        IAM policies come in two main types: identity-based and resource-based. Identity-based policies are attached to
+        users, groups, and roles, defining their permissions. Resource-based policies are attached to resources like S3
+        buckets, controlling who can access them. Additionally, IAM offers broader access control mechanisms like
+        permission boundaries and SCPs to further enhance security.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Effectively using IAM roles and policies ensures secure access management in your AWS environment. By creating
+        unique roles with specific permissions and attaching them to services, you can minimize risks and maintain
+        control over your cloud resources.
+    </p>
+</body>

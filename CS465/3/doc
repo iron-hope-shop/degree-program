@@ -1,0 +1,16 @@
+Executive Summary
+
+Travelr Getaways’ web app uses the MEAN stack. It offers a lively, responsive experience for customers and for admins. The architecture uses MongoDB for flexible data storage. It uses Express.js for robust server-side handling, and Angular.js for a reactive client-side interface. It uses Node.js for a non-blocking, event-driven backend. It supports the complex needs of online booking and management. The customer-facing side provides an intuitive trip browsing and booking experience, while the administrator side, as a Single-Page Application (SPA), ensures efficient backend management with minimal page reloads.
+
+The design constraints of the Travlr Getaways app include: 
+
+Browser compatibility
+
+Ensuring responsiveness on all devices
+
+
+
+These constraints need a lightweight, scalable front end. It relies on RESTful APIs for client-server interaction. It needs robust database indexing to manage read/write operations well.
+
+
+

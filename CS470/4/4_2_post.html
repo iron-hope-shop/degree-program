@@ -1,0 +1,146 @@
+<!--
+    Template for Blackboard discussion board posts.
+    Created/Maintained by: Bradley Jackson <me@brad-jackson.com>
+-->
+
+<head>
+    <p style="text-align: left; font-weight: bold;">
+        Brad Jackson
+        <!-- UPDATE -->
+        <span style="float: right">
+            May 30, 2024
+            <!-- UPDATE -->
+        </span>
+        <br>
+        CS470
+        <!-- UPDATE -->
+        <br>
+        Discussion Board: Week 4-2
+        <!-- UPDATE -->
+    </p>
+    <h1 style="text-align:center!important;">
+        The Silent Guardian
+        <!-- UPDATE -->
+    </h1>
+</head>
+
+<body style="text-align:justify;">
+    <!--
+        <h3 style="text-align: center !important;">
+       Advanced Use Cases and Best Practices
+   </h3>
+   <p style="text-indent:48px;line-height:2">
+       Welcome to the forefront of AWS Lambda's applications. Here, utilizing feature flagging in serverless setups is pivotal. It allows detailed control over function versions. This lets you easily perform A/B tests. Developers use tools like the Unleash Node.js SDK. It aids in handling updates smoothly. This method helps introduce new features gradually. It also cuts down on delays in operations.
+    </p> -->
+    <p style="text-indent:48px;line-height:2">
+        Entering Amazon's cloud services world, you meet an magical tool: the API Gateway. It's key for developers
+        looking to deploy APIs well. Think of it as a strong protector that manages APIs. It lets you handle traffic,
+        errors, and speed to make AWS APIs work perfectly. The API Gateway works like a guard at a castle, only allowing
+        the right people in. It helps with making new webservices for apps or protecting data with Amazon Cognito (Orvee, 2023). By
+        smoothly controlling data movement, it ensures everyone gets a safe and easy online experience. It's not just
+        using APIs on Amazon; it's about using them the best way.
+    </p>
+
+    <h3 style="text-align: center !important;">
+        Understanding Amazon API Gateway
+    </h3>
+    <p style="text-indent:48px;line-height:2">
+        Imagine a place where technology always does what you want. That's what Amazon API Gateway does. It's a perfect
+        mix of control and accuracy. This tool links Amazon API Gateway routing with innovation perfectly.
+
+        At heart, API Gateway is like a guardian for your online world. It decides who can see what, making sure all
+        requests go to the right spot. The cool parts of Amazon API Gateway show clearly when used with AWS Lambda. You
+        don't need to worry about running a server. This 'no-server' setup lets you focus on creating, not managing.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Keep going, and you'll find amazing technology. HTTP APIs, for example, are a cheaper choice than REST APIs,
+        saving up to 71% in costs (Amazon Web Services, 2024). This is great for startups looking to grow without huge costs. Plus, the AWS Free
+        Tier offers 1 million free API calls per month for a year. This is a big help, letting you grow at a low cost.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Worried about how well it works? Don't be. API Gateway makes sure there's almost no delay. It handles lots of
+        visitors with ease. It also comes with tools to check on your API's performance in real time. And with the AWS
+        dashboard, managing everything is smooth.
+
+        Now, think about its flexibility. You can use different API versions together and add strong security measures
+        with AWS IAM and Amazon Cognito (Orvee, 2023). API Gateway changes with you as your needs grow. Think about the benefits. Then
+        step into a digital world where your ideas are the only limit.
+    </p>
+    <h3 style="text-align: center !important;">
+        Security Mechanisms in API Gateway
+    </h3>
+
+    <p style="text-indent:48px;line-height:2">
+        In the fortress of Amazon API Gateway, security stands paramount. It keeps out those who don't belong. The
+        security mechanisms act as guards. They keep away anyone who tries to get in without permission.
+
+        The API Gateway Lambda Authorizersare on the front line. They check every request. Then, they decide who can
+        enter based on rules from Amazon IAM and amazon-cognito (Amazon Web Services, 2024).
+
+        You can set up access controls just how you like with Lambda Authorizers. This means only the right people get
+        to use your API. It keeps your API Gateway safe and sound. Also, you can control who gets in based on their
+        location and other details.
+
+        Amazon Cognito user pools are a big help. They handle who gets in really well. This makes your API Gateway even
+        safer. When you add Amazon IAM, your defenses get even stronger.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        API Gateway makes sure everyone comes from safe places. It uses SSL certificates to confirm who's sending
+        requests. Also, AWS WAF stops bad web attacks. Keys and plans for using the API keep an eye on how it's used.
+
+        Logging is also key to keeping everything safe. People use systems like CloudWatch Logs a lot. This shows
+        keeping an eye on things is really important.
+
+        Every call to the API gets special attention. With many security measures working together, API Gateway is like
+        a fortress. It safely handles your data, protecting it with great care.
+
+        This detailed set up of security features ensures your API is very secure. Thanks to tools like API Gateway
+        Lambda Authorizers, your API works smoothly and safely.
+    </p>
+    <h3 style="text-align: center !important;">
+        Integrating Amazon API Gateway with AWS Services
+    </h3>
+    <p style="text-indent:48px;line-height:2">
+        Amazon API Gateway is key for working with AWS services. It connects smoothly with AWS Lambda, Amazon S3, and
+        Amazon EventBridge. This makes it more than just a gatekeeper. It orchestrates cloud activities like a
+        conductor.
+
+        Think of pairing API Gateway with AWS Lambda. This lets you run serverless functions. Or, connecting it with
+        Amazon S3 for fast data work. These matches open doors to scalable, efficient, and serverless work.
+
+    </p>
+    <p style="text-indent:48px;line-height:2">
+
+        API Gateway's strength is in how it can connect. It has different integration types. The AWS_PROXY type is great
+        for fast Lambda function calls. This is good for quick projects with less bulk.
+    </p>
+    <p style="text-indent:48px;line-height:2">
+        Then there's the HTTP_PROXY type for simpler HTTP setups. But if you need more options, the HTTP custom
+        integration lets you reuse templates on different endpoints. This gives flexibility for more detailed work.
+
+        Getting these connections up isn't just linking bits together. It means setting up requests and making sure
+        permissions are right. Each type needs careful setup, including mapping data and testing everything. For
+        instance, sending an Amazon SQS message has its own rules (Amazon Web Services, 2024).
+
+        API Gateway also supports MOCK integrations. This lets you test without hitting the backend every time. It's
+        perfect for trying out and working together on setups. With these tools, API Gateway becomes a powerful link for
+        better performance in the cloud.
+    </p>
+
+
+    <h4 style="text-align: center !important;">
+        References
+        <!-- UPDATE IF NEEDED -->
+    </h4>
+
+    <p style="line-height: 2; padding-left: 48px; text-indent: -48px;">
+        Orvee. (2023, June 23). <i>Taming the serverless beast: Conquering AWS Lambda and API Gateway with Node.js</i>. Medium. Retrieved from 
+        <a href="https://medium.com/@orvee16/taming-the-serverless-beast-conquering-aws-lambda-and-api-gateway-with-node-js-ac5e9dac38bf">https://medium.com/@orvee16/taming-the-serverless-beast-conquering-aws-lambda-and-api-gateway-with-node-js-ac5e9dac38bf</a>
+    </p>
+    
+    <p style="line-height: 2; padding-left: 48px; text-indent: -48px;">
+        Amazon Web Services. (2024). <i>API Management - Amazon API Gateway</i>. Retrieved from 
+        <a href="https://aws.amazon.com/api-gateway/">https://aws.amazon.com/api-gateway/</a>
+    </p>
+
+</body>
