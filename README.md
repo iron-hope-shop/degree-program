@@ -1,3 +1,5 @@
+All Rights Reserved
+
 # Degree Program Final Reflection
 **Brad J. | 02/17/2025**
 
